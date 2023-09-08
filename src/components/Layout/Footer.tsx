@@ -1,10 +1,13 @@
 import Image from "next/image";
 import logoWhite from "../../assets/images/Logo-Blanc.svg";
+import { GoArrowRight } from "react-icons/go";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { FaTelegram } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="border-t-[1px] border-white flex flex-col items-center bg-grey-blue py-8">
-      <div className="flex flex-col items-center w-full">
+      <div className="flex flex-col items-center w-full pb-5">
         <Image src={logoWhite} alt="logo" className="max-w-[121px] pb-6" />
         <div className="grid grid-cols-2  gap-6 place-content-evenly w-full px-6">
           <div className="flex flex-col items-center">
@@ -37,21 +40,33 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center">
-        <div className="join">
+      <div className="flex flex-col items-center rounded-full w-full pb-9">
+        <div className="join border-0 pb-3">
           <input
-            className="input input-bordered join-item"
-            placeholder="Email"
+            type="text"
+            className="input join-item rounded-full bg-white/10 border-white/10 placeholder:text-white placeholder:text-xs border-0 h-auto font-bold mr-[1px]"
+            placeholder="Subscribe to our Newsletter"
           />
-          <button className="btn join-item rounded-r-full">Subscribe</button>
+          <div className="join-item border-white/10 rounded-r-full bg-white/10 rounded-r-full border-0 p-2">
+            <a className="btn rounded-full font-bold text-3xl bg-light-orange text-black border-[1px] border-white/20">
+              <GoArrowRight />
+            </a>
+          </div>
         </div>
         <h2 className="text-light-orange font-medium py-3">Social Links</h2>
-        <div>
-          <a>twt</a>
-          <a>telegram</a>
+        <div className="flex">
+          <a className="text-light-orange rounded-full border-0 text-4xl w-full mr-5">
+            <AiFillTwitterCircle />
+          </a>
+          <a className="text-light-orange rounded-full border-0 text-4xl w-full">
+            <FaTelegram />
+          </a>
         </div>
       </div>
-      <div>Copyright</div>
+      <div className="w-full px-6 flex flex-col items-center">
+        <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-light-orange to-transparent mb-6"></div>
+        <p>Copyright © 2023 ukiyo. All rights reserved.</p>
+      </div>
     </footer>
   );
 };
