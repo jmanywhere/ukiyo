@@ -12,7 +12,6 @@ export default function Home() {
           }}
         />
       </div>
-      <div className="h-[700px]">page</div>
     </main>
   );
 }
