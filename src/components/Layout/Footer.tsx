@@ -7,9 +7,9 @@ import { FaTelegram } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="border-t-[1px] border-white flex flex-col items-center bg-grey-blue py-8">
-      <div className="flex flex-col items-center w-full pb-5">
+      <div className="flex flex-col md:flex-row items-center  md:items-start w-full pb-5 md:px-8  xl:px-16">
         <Image src={logoWhite} alt="logo" className="max-w-[121px] pb-6" />
-        <div className="grid grid-cols-2  gap-6 place-content-evenly w-full px-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 place-content-evenly w-full px-6">
           <div className="flex flex-col items-center">
             <h2 className="pb-2 text-light-orange font-medium">Quick Links</h2>
             <a className="text-sm pb-2">Home</a>
@@ -40,8 +40,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center rounded-full w-full pb-9">
-        <div className="join border-0 pb-3">
+      <div className="flex flex-col lg:flex-row lg:justify-between items-center rounded-full w-full lg:max-w-[500px] py-9 items-center">
+        <div className="join border-0 py-4">
           <input
             type="text"
             className="input join-item rounded-full bg-white/10 border-white/10 placeholder:text-white placeholder:text-xs border-0 h-auto font-bold mr-[1px]"
@@ -53,14 +53,16 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <h2 className="text-light-orange font-medium py-3">Social Links</h2>
-        <div className="flex">
-          <a className="text-light-orange rounded-full border-0 text-4xl w-full mr-5">
-            <AiFillTwitterCircle />
-          </a>
-          <a className="text-light-orange rounded-full border-0 text-4xl w-full">
-            <FaTelegram />
-          </a>
+        <div className="py-3">
+          <h2 className="text-light-orange font-medium pb-3">Social Links</h2>
+          <div className="flex">
+            <a className="text-light-orange rounded-full border-0 text-4xl w-full mr-5">
+              <AiFillTwitterCircle />
+            </a>
+            <a className="text-light-orange rounded-full border-0 text-4xl w-full">
+              <FaTelegram />
+            </a>
+          </div>
         </div>
       </div>
       <div className="w-full px-6 flex flex-col items-center">
