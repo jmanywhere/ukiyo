@@ -11,7 +11,7 @@ const Footer = () => {
             <h2 className="pb-2 text-light-orange font-medium">Quick Links</h2>
             <a className="text-sm pb-2">Home</a>
             <a className="text-sm pb-2">Blog</a>
-            <a className="text-sm pb-2">FAQ's</a>
+            <a className="text-sm pb-2">FAQ&apos;s</a>
             <a className="text-sm pb-2">Forum</a>
           </div>
           <div className="flex flex-col items-center">
@@ -26,12 +26,12 @@ const Footer = () => {
             <a className="text-sm pb-2">Documentation</a>
             <a className="text-sm pb-2">Governance</a>
             <a className="text-sm pb-2">Whitepaper</a>
-            <a className="text-sm pb-2">T&C's</a>
+            <a className="text-sm pb-2">T&C&apos;s</a>
             <a className="text-sm pb-2">Privacy Policy</a>
           </div>
           <div className="flex flex-col items-center">
             <h2 className="pb-2 text-light-orange font-medium">Contact Us</h2>
-            <a className="text-sm pb-2">Ukiyo's Discord</a>
+            <a className="text-sm pb-2">Ukiyo&apos;s Discord</a>
             <a className="text-sm pb-2">Contact</a>
             <a className="text-sm pb-2">Brand Assets</a>
           </div>
