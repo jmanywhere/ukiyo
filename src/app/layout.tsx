@@ -5,10 +5,11 @@ import { Inter, Poppins } from "next/font/google";
 
 import Header from "./../components/Layout/Header";
 import Footer from "./../components/Layout/Footer";
+import classNames from "classnames";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -23,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={classNames("bg-dark-blue", poppins.className)}>
         <Header />
         <ClientProviders>{children}</ClientProviders>
         <Footer />
