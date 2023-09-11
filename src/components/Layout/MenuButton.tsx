@@ -20,7 +20,7 @@ const MenuButton = (props: menuProps) => {
         className="drawer-toggle"
         onClick={() => setOpen((p) => !p)}
       />
-      <div className="drawer-content flex justify-end">
+      <div className="drawer-content flex justify-end  items-center">
         {/* Page content here */}
         <label
           htmlFor="my-drawer"
