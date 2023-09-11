@@ -1,8 +1,12 @@
 import Image from "next/image";
 import heroImg from "@/lotties/HeroImageUkiyo.json";
-import heroBackground from "./../assets/images/home.svg";
+import ventures from "@/lotties/Ventures.json";
+import staking from "@/lotties/Staking.json";
+import treasury from "./../assets/images/home.svg";
+import mob from "./../assets/images/mob.svg";
 import LottieContainer from "@/components/LottieContainer";
 import FeatureCard from "@/components/FeatureCard";
+import EcoCard from "@/components/EcoCard";
 
 export default function Home() {
   const lockedValue = 0; //ilustrative pourpuses
@@ -10,7 +14,8 @@ export default function Home() {
   const tokenDeployed = 0; //ilustrative pourpuses
 
   return (
-    <main className="min-h-screen py-24 flex flex-col items-center w-full">
+    <main className="min-h-screen pt-24 flex flex-col items-center w-full">
+      {/*hero*/}
       <div className="pb-24 px-5 lg:px-8 flex flex-col lg:flex-row items-center max-w-[1440px]">
         <div className="z-10 lg:order-1">
           <LottieContainer
@@ -47,11 +52,14 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-white w-full px-5 flex flex-col items-center">
+      {/*stats and features*/}
+      <div className="bg-white w-full px-5 pb-5 md:pb-20 flex flex-col items-center">
         <div className="relative max-w-[1440px] w-full">
           <div className="flex flex-col items-center md:items-start md:px-8 bg-white rounded-3xl drop-shadow-xl p-6 mb-5 -top-12 absolute w-full">
-            <h2 className="text-2xl text-black">Protocol Stats</h2>
-            <div className="stats stats-vertical md:stats-horizontal bg-white/20">
+            <h2 className="text-2xl text-black font-semibold">
+              Protocol Stats
+            </h2>
+            <div className="stats stats-vertical md:stats-horizontal bg-white/20 w-full">
               <div className="stat place-items-center py-2">
                 <div className="stat-figure text-primary"></div>
                 <div className="stat-title mb-3">Total Value Locked</div>
@@ -69,12 +77,44 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <h2 className="text-black pt-[350px]">Features</h2>
-        <div>
-          <FeatureCard />
-          <FeatureCard />
+        <h2 className="text-black pt-[350px] md:pt-[180px] font-semibold text-2xl md:text-3xl mb-5 md:mb-7">
+          Features
+        </h2>
+        <div className="flex flex-col md:flex-row md:gap-4 lg:gap-6 max-w-[1440px]">
+          <FeatureCard
+            title="Ventures"
+            text="Become a disruptive investor via web3 and access start-ups and mid-stage projects"
+            btnText="Learn"
+            lottie={ventures}
+          />
+          <FeatureCard
+            title="Staking"
+            text="Earn passive income from the Vault. Stake KXO. Govern the protocol"
+            btnText="Learn"
+            lottie={staking}
+          />
         </div>
-        <div className="h-[400px]">content</div>
+      </div>
+      {/*ecosystem*/}
+      <div className="bg-grey-blue w-full flex flex-col items-center pt-5 pb-10">
+        <h2 className="py-2 text-2xl md:text-3xl font-semibold mb-2 md:mb-8">
+          Ecosystem
+        </h2>
+        <div className="flex flex-col items-center md:items-stretch md:flex-row px-6 gap-3 md:gap-5 justify-center w-full max-w-[1440px]">
+          <EcoCard
+            title="Treasury"
+            text="The Reserve and Liquidity of the protocol.
+            Owned and controlled by the community"
+            image={treasury}
+            altText="treasury"
+          />
+          <EcoCard
+            title="Vault"
+            text="Learn about the Vault, its mechanics, and how you can earn KXO"
+            image={mob}
+            altText="mob"
+          />
+        </div>
       </div>
     </main>
   );
