@@ -1,6 +1,8 @@
 import Image from "next/image";
 import logoWhite from "../../assets/images/Logo-Blanc.svg";
-import { GoArrowRight } from "react-icons/go";
+
+import SuscribeBtn from "./SuscribeBtn";
+
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
 
@@ -43,19 +45,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row lg:justify-between items-center rounded-full w-full lg:max-w-[500px] py-9 items-center">
-          <div className="join border-0 py-4">
-            <input
-              type="text"
-              className="input join-item rounded-full bg-white/10 border-white/10 placeholder:text-white placeholder:text-xs border-0 h-auto font-bold mr-[1px]"
-              placeholder="Subscribe to our Newsletter"
-            />
-            <div className="join-item border-white/10 rounded-r-full bg-white/10 rounded-r-full border-0 p-2">
-              <a className="btn rounded-full font-bold text-3xl bg-light-orange text-black border-[1px] border-white/20">
-                <GoArrowRight />
-              </a>
-            </div>
-          </div>
+        <div className="flex flex-col items-center rounded-full w-full lg:max-w-[500px] py-9 items-center">
           <div className="py-3">
             <h2 className="text-light-orange font-medium pb-3">Social Links</h2>
             <div className="flex">
