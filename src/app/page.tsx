@@ -1,12 +1,21 @@
+//next
 import Image from "next/image";
+
+//lotties animation
+import LottieContainer from "@/components/LottieContainer";
 import heroImg from "@/lotties/HeroImageUkiyo.json";
 import ventures from "@/lotties/Ventures.json";
 import staking from "@/lotties/Staking.json";
+
+//images
 import treasury from "./../assets/images/home.svg";
 import mob from "./../assets/images/mob.svg";
-import LottieContainer from "@/components/LottieContainer";
+import community from "./../assets/images/malefemale.png";
+
+//components
 import FeatureCard from "@/components/FeatureCard";
 import EcoCard from "@/components/EcoCard";
+import GobernanceCard from "@/components/GobernanceCard";
 
 export default function Home() {
   const lockedValue = 0; //ilustrative pourpuses
@@ -16,7 +25,7 @@ export default function Home() {
   return (
     <main className="min-h-screen pt-24 flex flex-col items-center w-full">
       {/*hero*/}
-      <div className="pb-24 px-5 lg:px-8 flex flex-col lg:flex-row items-center max-w-[1440px]">
+      <section className="pb-24 px-5 lg:px-8 flex flex-col lg:flex-row items-center max-w-[1440px]">
         <div className="z-10 lg:order-1">
           <LottieContainer
             options={{
@@ -51,9 +60,9 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </div>
+      </section>
       {/*stats and features*/}
-      <div className="bg-white w-full px-5 pb-5 md:pb-20 flex flex-col items-center">
+      <section className="bg-white w-full px-5 pb-5 md:pb-20 flex flex-col items-center">
         <div className="relative max-w-[1440px] w-full">
           <div className="flex flex-col items-center md:items-start md:px-8 bg-white rounded-3xl drop-shadow-xl p-6 mb-5 -top-12 absolute w-full">
             <h2 className="text-2xl text-black font-semibold">
@@ -94,9 +103,9 @@ export default function Home() {
             lottie={staking}
           />
         </div>
-      </div>
+      </section>
       {/*ecosystem*/}
-      <div className="bg-grey-blue w-full flex flex-col items-center pt-5 pb-10">
+      <section className="bg-grey-blue w-full flex flex-col items-center pt-5 pb-10">
         <h2 className="py-2 text-2xl md:text-3xl font-semibold mb-2 md:mb-8">
           Ecosystem
         </h2>
@@ -115,7 +124,43 @@ export default function Home() {
             altText="mob"
           />
         </div>
-      </div>
+      </section>
+      {/*Governed by*/}
+      <section className="bg-light-grey text-black flex flex-col items-center py-8 px-5">
+        <h2 className="text-2xl font-semibold text-center mb-5">
+          Governed by the Community
+        </h2>
+        <p className="text-sm font-medium text-center mb-6">
+          ukiyo is a protocol that is entirely decentralized and governed by its
+          community
+        </p>
+        <a className="btn rounded-full bg-light-orange text-white normal-case mb-8 border-0">
+          Goberment Forum
+        </a>
+        <Image src={community} alt="community-img" className="mb-5" />
+        <h3 className="text-2xl font-semibold text-center mb-5">
+          How it works
+        </h3>
+        <GobernanceCard
+          cards={[
+            {
+              title: "Request for Comment Submission (RFC)",
+              text: "Submit proposals and comments and engage with the DAO community.",
+              aText: "Visit Docs",
+            },
+            {
+              title: "Create a Snapshot",
+              text: "Use a Snapshot vote to measure community opinion on a new proposal.",
+              aText: "Go to Snapshot",
+            },
+            {
+              title: "Submit a Request for Improvement (UIP) for ukiyo",
+              text: "The proposal(s) can now be submitted via a GitHub pull request, and the DAO community can vote on approvals.",
+              aText: "Visit Docs",
+            },
+          ]}
+        />
+      </section>
     </main>
   );
 }
