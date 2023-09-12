@@ -20,9 +20,9 @@ const GobernanceCard = (props: gobProps) => {
   return (
     <div>
       {cardsArray.map(({ title, text, aText }, i) => (
-        <div>
+        <div key={`governance-${i}-${title}`}>
           <div className="flex items-center">
-            <Image src={one} alt={i + 1} />
+            <Image src={one} alt={`gov-img-${i + 1}`} />
             <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-light-orange to-transparent mb-6"></div>
           </div>
           <h4>{title}</h4>

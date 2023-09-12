@@ -1,7 +1,7 @@
 import { ClientProviders } from "@/providers/ClientSide";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 
 import Header from "./../components/Layout/Header";
 import Footer from "./../components/Layout/Footer";
@@ -10,6 +10,7 @@ import classNames from "classnames";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {

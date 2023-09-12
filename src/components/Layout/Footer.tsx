@@ -1,10 +1,8 @@
 import Image from "next/image";
 import logoWhite from "../../assets/images/Logo-Blanc.svg";
 
-import SuscribeBtn from "./SuscribeBtn";
-
-import { AiFillTwitterCircle } from "react-icons/ai";
-import { FaTelegram } from "react-icons/fa";
+import { BsTwitter } from "react-icons/bs";
+import { BiLogoTelegram } from "react-icons/bi";
 
 const Footer = () => {
   return (
@@ -45,15 +43,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center rounded-full w-full lg:max-w-[500px] py-9 items-center">
+        <div className="flex flex-col items-center rounded-full w-full lg:max-w-[500px] py-9">
           <div className="py-3">
             <h2 className="text-light-orange font-medium pb-3">Social Links</h2>
-            <div className="flex">
-              <a className="text-light-orange rounded-full border-0 text-4xl w-full mr-5">
-                <AiFillTwitterCircle />
+            <div className="flex flex-row items-center gap-4">
+              <a className="text-white rounded-full border-0 bg-light-orange overflow-hidden p-[8px] flex items-center justify-center">
+                <BsTwitter className="text-[25px]" />
               </a>
-              <a className="text-light-orange rounded-full border-0 text-4xl w-full">
-                <FaTelegram />
+              <a className="text-white bg-light-orange p-[8px] pl-[7px] rounded-full">
+                <BiLogoTelegram className="text-[25px] mr-[1px]" />
               </a>
             </div>
           </div>

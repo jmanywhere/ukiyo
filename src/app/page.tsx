@@ -11,6 +11,7 @@ import staking from "@/lotties/Staking.json";
 import treasury from "./../assets/images/home.svg";
 import mob from "./../assets/images/mob.svg";
 import community from "./../assets/images/malefemale.png";
+import hero_placeholder from "./../../public/hero_placeholder.gif";
 
 //components
 import FeatureCard from "@/components/FeatureCard";
@@ -26,11 +27,11 @@ export default function Home() {
     <main className="min-h-screen pt-24 flex flex-col items-center w-full">
       {/*hero*/}
       <section className="pb-24 px-5 lg:px-8 flex flex-col lg:flex-row items-center max-w-[1440px]">
-        <div className="z-10 lg:order-1">
+        <div className="z-10 lg:order-1 max-w-[510px] lg:max-w-full min-h-[30vh] max-h-[380px]">
           <LottieContainer
-            options={{
-              animationData: heroImg,
-            }}
+            lottie={{ animationData: heroImg }}
+            placeholder={hero_placeholder}
+            alt="Hero_placeholder"
           />
         </div>
         <div className="flex flex-col items-center lg:items-start py-6 lg:flex-[0_0_50%]">
@@ -48,13 +49,13 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-4 w-full max-w-[345px]">
             <a
               href="https://www.dropbox.com/s/a7wal9nsw43zlb3/230324 ukiyo Whitepaper v1.pdf?dl=0"
-              className="bg-light-orange py-2 px-4 rounded-full w-full text-center hover:bg-transparent hover:border-light-orange hover:border-2 hover:text-light-orange"
+              className="text-xs md:text-lg bg-light-orange py-2 px-4 rounded-full w-full text-center hover:bg-transparent border-light-orange border-2 hover:text-light-orange"
             >
               Whitepaper
             </a>
             <a
               href="https://github.com/ukiyo-protocol"
-              className="w-full py-2 px-4 rounded-full w-full text-center border-2 hover:bg-transparent hover:border-light-orange hover:border-2 hover:text-light-orange"
+              className="text-xs md:text-lg w-full py-2 px-4 rounded-full text-center border-2 hover:bg-transparent hover:border-light-orange hover:border-2 hover:text-light-orange"
             >
               Github
             </a>
@@ -89,7 +90,7 @@ export default function Home() {
         <h2 className="text-black pt-[350px] md:pt-[180px] font-semibold text-2xl md:text-3xl mb-5 md:mb-7">
           Features
         </h2>
-        <div className="flex flex-col md:flex-row md:gap-4 lg:gap-6 max-w-[1440px]">
+        <div className="grid grid-flow-col md:grid-flow-row grid-rows-2 md:grid-rows-1 md:grid-cols-2 md:gap-4 lg:gap-6 max-w-[1440px]">
           <FeatureCard
             title="Ventures"
             text="Become a disruptive investor via web3 and access start-ups and mid-stage projects"
