@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={classNames("bg-dark-blue", poppins.className)}>
+      <body className={classNames("", poppins.className)}>
         <Header />
         <ClientProviders>{children}</ClientProviders>
         <Footer />
