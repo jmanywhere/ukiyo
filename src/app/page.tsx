@@ -127,7 +127,7 @@ export default function Home() {
         </div>
       </section>
       {/*Governed by*/}
-      <section className="bg-light-grey text-black flex flex-col items-center py-8 px-5">
+      <section className="bg-light-grey text-black flex flex-col items-center py-10 px-5">
         <h2 className="text-2xl font-semibold text-center mb-5">
           Governed by the Community
         </h2>
@@ -138,8 +138,8 @@ export default function Home() {
         <a className="btn rounded-full bg-light-orange text-white normal-case mb-8 border-0">
           Goberment Forum
         </a>
-        <Image src={community} alt="community-img" className="mb-5" />
-        <h3 className="text-2xl font-semibold text-center mb-5">
+        <Image src={community} alt="community-img" className="mb-10" />
+        <h3 className="text-2xl font-semibold text-center mb-10">
           How it works
         </h3>
         <GobernanceCard
