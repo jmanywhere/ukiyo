@@ -7,6 +7,10 @@
     @apply bg-grey-blue;
     background: radial-gradient(farthest-corner at 37px 82px,#355f70 0,#0d2a35 42%);
   }
+  .main-bg {
+    @apply bg-grey-blue bg-mainBg;
+    
+  }
 }
 
 :root {

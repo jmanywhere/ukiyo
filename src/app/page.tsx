@@ -24,41 +24,46 @@ export default function Home() {
   const tokenDeployed = 0; //ilustrative pourpuses
 
   return (
-    <main className="min-h-screen flex flex-col items-center w-full">
+    <main className="min-h-screen flex flex-col items-center w-full bg-light-grey">
       {/*hero*/}
-      <section className="pb-28 pt-24 px-5 lg:px-8 flex flex-col lg:flex-row items-center max-w-[1440px] relative bg-mainBg">
-        <div className="z-10 lg:order-1 max-w-[510px] lg:max-w-full min-h-[30vh] max-h-[380px]">
-          <LottieContainer
-            lottie={{ animationData: heroImg }}
-            placeholder={hero_placeholder}
-            alt="Hero_placeholder"
-          />
-        </div>
-        <div className="flex flex-col items-center lg:items-start py-6 lg:flex-[0_0_50%]">
-          <h2 className="text-4xl md:text-5xl text-light-orange font-semibold">
-            Ukiyo
-          </h2>
-          <h2 className="text-4xl md:text-5xl font-semibold pb-5">Protocol</h2>
-          <p className="text-center lg:text-left pb-3 text-sm text-[#F7F8FD]/80 font-light">
-            Venture Capital and Private Equity technology stack to kickstart
-            Blockchain and Real-World projects
-          </p>
-          <p className="text-center lg:text-left pb-8 text-sm text-[#F7F8FD]/80 font-light">
-            A community driven protocol powered by Ethereum
-          </p>
-          <div className="grid grid-cols-2 gap-4 w-full max-w-[345px]">
-            <a
-              href="https://www.dropbox.com/s/a7wal9nsw43zlb3/230324 ukiyo Whitepaper v1.pdf?dl=0"
-              className="text-xs md:text-lg bg-light-orange py-2 px-4 rounded-full w-full text-center hover:bg-transparent border-light-orange border-2 hover:text-light-orange"
-            >
-              Whitepaper
-            </a>
-            <a
-              href="https://github.com/ukiyo-protocol"
-              className="text-xs md:text-lg w-full py-2 px-4 rounded-full text-center border-2 hover:bg-transparent hover:border-light-orange hover:border-2 hover:text-light-orange"
-            >
-              Github
-            </a>
+      <section className="w-full flex flex-col items-center justify-center main-bg">
+        <div className="pb-28 pt-24 px-5 lg:px-8 flex flex-col lg:flex-row items-center max-w-[1440px] relative">
+          <div className="z-10 lg:order-1 max-w-[510px] lg:max-w-full min-h-[30vh] max-h-[380px] flex items-center justify-center">
+            <LottieContainer
+              lottie={{ animationData: heroImg }}
+              placeholder={hero_placeholder}
+              className="max-w-[90%]"
+              alt="Hero_placeholder"
+            />
+          </div>
+          <div className="flex flex-col items-center lg:items-start py-6 lg:flex-[0_0_50%]">
+            <h2 className="text-4xl md:text-5xl text-light-orange font-semibold">
+              Ukiyo
+            </h2>
+            <h2 className="text-4xl md:text-5xl font-semibold pb-5">
+              Protocol
+            </h2>
+            <p className="text-center lg:text-left pb-3 text-sm text-[#F7F8FD]/80 font-light">
+              Venture Capital and Private Equity technology stack to kickstart
+              Blockchain and Real-World projects
+            </p>
+            <p className="text-center lg:text-left pb-8 text-sm text-[#F7F8FD]/80 font-light">
+              A community driven protocol powered by Ethereum
+            </p>
+            <div className="grid grid-cols-2 gap-4 w-full max-w-[345px]">
+              <a
+                href="https://www.dropbox.com/s/a7wal9nsw43zlb3/230324 ukiyo Whitepaper v1.pdf?dl=0"
+                className="text-xs md:text-lg bg-light-orange py-2 px-4 rounded-full w-full text-center hover:bg-transparent border-light-orange border-2 hover:text-light-orange"
+              >
+                Whitepaper
+              </a>
+              <a
+                href="https://github.com/ukiyo-protocol"
+                className="text-xs md:text-lg w-full py-2 px-4 rounded-full text-center border-2 hover:bg-transparent hover:border-light-orange hover:border-2 hover:text-light-orange"
+              >
+                Github
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -127,7 +132,7 @@ export default function Home() {
         </div>
       </section>
       {/*Governed by*/}
-      <section className="bg-light-grey text-black flex flex-col items-center py-10 px-5">
+      <section className="bg-light-grey text-black flex flex-col items-center py-10 px-5 w-full">
         <h2 className="text-2xl font-semibold text-center mb-5">
           Governed by the Community
         </h2>
