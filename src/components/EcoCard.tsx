@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { HiArrowLongRight } from "react-icons/hi2";
 
 type ecoProps = {
   title: string;
   text: string;
-  image: object;
+  image: StaticImageData | string;
   altText: string;
 };
 
