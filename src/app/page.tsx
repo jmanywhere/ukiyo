@@ -38,7 +38,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center lg:items-start py-6 lg:flex-[0_0_50%]">
             <h2 className="text-4xl md:text-5xl text-light-orange font-semibold">
-              Ukiyo
+              ukiyo
             </h2>
             <h2 className="text-4xl md:text-5xl font-semibold pb-5">
               Protocol
@@ -53,13 +53,13 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-4 w-full max-w-[345px]">
               <a
                 href="https://www.dropbox.com/s/a7wal9nsw43zlb3/230324 ukiyo Whitepaper v1.pdf?dl=0"
-                className="text-xs md:text-lg bg-light-orange py-2 px-4 rounded-full w-full text-center hover:bg-transparent border-light-orange border-2 hover:text-light-orange"
+                className="transition shadow-inner shadow-white/40 text-xs md:text-[16px] bg-light-orange py-4 px-4 rounded-full w-full text-center hover:bg-transparent border-light-orange border-[1px] hover:text-light-orange"
               >
                 Whitepaper
               </a>
               <a
                 href="https://github.com/ukiyo-protocol"
-                className="text-xs md:text-lg w-full py-2 px-4 rounded-full text-center border-2 hover:bg-transparent hover:border-light-orange hover:border-2 hover:text-light-orange"
+                className="transition text-xs md:text-[16px] w-full py-4 shadow-inner shadow-white/40 text-white px-4 rounded-full text-center border-[1px] hover:bg-transparent hover:border-light-orange hover:text-light-orange"
               >
                 Github
               </a>
@@ -76,17 +76,20 @@ export default function Home() {
             </h2>
             <div className="stats stats-vertical md:stats-horizontal bg-white/20 w-full">
               <div className="stat place-items-center py-2">
-                <div className="stat-figure text-primary"></div>
-                <div className="stat-title mb-3">Total Value Locked</div>
+                <div className="stat-title mb-3 text-black">
+                  Total Value Locked
+                </div>
                 <div className="stat-value text-black">${lockedValue}</div>
               </div>
               <div className="stat place-items-center py-2">
-                <div className="stat-title mb-3">Token Price</div>
+                <div className="stat-title mb-3 text-black">Token Price</div>
                 <div className="stat-value text-black">${tokenPrice}</div>
               </div>
 
               <div className="stat place-items-center py-2">
-                <div className="stat-title mb-3">Total Assets Deployed</div>
+                <div className="stat-title mb-3 text-black">
+                  Total Assets Deployed
+                </div>
                 <div className="stat-value text-black">${tokenDeployed}</div>
               </div>
             </div>
