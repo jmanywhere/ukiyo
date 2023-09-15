@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header
       className={classNames(
-        "py-4 px-4  fixed top-0 left-0 right-0 z-50 flex justify-center ",
+        "py-4 px-4  fixed top-0 left-0 right-0 z-50 flex justify-center transition duration-300",
         scrollPosition > 0 ? "bg-white" : ""
       )}
     >
@@ -38,15 +38,17 @@ const Header = () => {
         <MenuButton scroll={scrollPosition} />
         <nav
           className={classNames(
-            "hidden lg:flex items-center",
+            "hidden lg:flex items-center gap-x-5 px-5",
             scrollPosition > 0 ? "text-dark-blue" : ""
           )}
         >
-          <a className="text-light-orange px-5">Home</a>
-          <a className="px-5">Features</a>
-          <a className="px-5">Docs</a>
-          <a className="px-5">Governance</a>
-          <a className="px-5">FAQ</a>
+          <a className="text-light-orange after:absolute after:h-[2px] after:bg-light-orange after:w-full after:bottom-0 relative after:left-0 px-2">
+            Home
+          </a>
+          <a className="">Features</a>
+          <a className="">Docs</a>
+          <a className="">Governance</a>
+          <a className="">FAQ</a>
         </nav>
       </div>
     </header>
