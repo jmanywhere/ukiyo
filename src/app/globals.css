@@ -11,6 +11,10 @@
     @apply bg-grey-blue bg-mainBg;
     
   }
+
+  .nav-underline{
+      @apply relative after:absolute after:h-[2px] after:bg-light-orange after:w-full after:bottom-0 after:left-0;
+  }
 }
 
 html {

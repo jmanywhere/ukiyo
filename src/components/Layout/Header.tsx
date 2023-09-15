@@ -42,13 +42,19 @@ const Header = () => {
             scrollPosition > 0 ? "text-dark-blue" : ""
           )}
         >
-          <a className="text-light-orange after:absolute after:h-[2px] after:bg-light-orange after:w-full after:bottom-0 relative after:left-0 px-2">
-            Home
+          <a className="text-light-orange nav-underline px-2">Home</a>
+          <a className="hover:text-light-orange hover:after:absolute hover:after:h-[2px] hover:after:bg-light-orange hover:after:w-full hover:after:bottom-0 relative hover:after:left-0 px-2">
+            Features
           </a>
-          <a className="">Features</a>
-          <a className="">Docs</a>
-          <a className="">Governance</a>
-          <a className="">FAQ</a>
+          <a className="hover:text-light-orange hover:after:absolute hover:after:h-[2px] hover:after:bg-light-orange hover:after:w-full hover:after:bottom-0 relative hover:after:left-0 px-2">
+            Docs
+          </a>
+          <a className="hover:text-light-orange hover:after:absolute hover:after:h-[2px] hover:after:bg-light-orange hover:after:w-full hover:after:bottom-0 relative hover:after:left-0 px-2">
+            Governance
+          </a>
+          <a className="hover:text-light-orange hover:after:absolute hover:after:h-[2px] hover:after:bg-light-orange hover:after:w-full hover:after:bottom-0 relative hover:after:left-0 px-2">
+            FAQ
+          </a>
         </nav>
       </div>
     </header>

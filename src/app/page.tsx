@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center w-full bg-light-grey">
       {/*hero*/}
-      <section className="w-full flex flex-col items-center justify-center main-bg">
+      <section className="w-full flex flex-col items-center justify-center main-bg bg-cover">
         <div className="pb-28 pt-24 px-5 lg:px-8 flex flex-col lg:flex-row items-center max-w-[1440px] relative">
           <div className="z-10 lg:order-1 max-w-[510px] lg:max-w-full min-h-[30vh] max-h-[380px] flex items-center justify-center">
             <LottieContainer
