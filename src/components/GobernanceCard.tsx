@@ -22,7 +22,7 @@ const GobernanceCard = (props: gobProps) => {
   return (
     <div className="max-w-[1440px]">
       <div className="h-[2px] max-w-[1440px] w-full absolute hidden md:block bg-gradient-to-r from-transparent via-gray-300 to-transparent mt-6"></div>
-      <div className="flex flex-col gap-4  lg:gap-12 md:flex-row md:justify-center md:px-20">
+      <div className="flex flex-col gap-4  lg:gap-16 md:flex-row md:justify-center md:px-14">
         {cardsArray.map(({ title, text, aText }, i) => (
           <div key={`governance-${i}-${title}`}>
             <div className="flex items-center mb-5 relative bg-transparent">

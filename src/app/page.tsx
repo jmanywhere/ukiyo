@@ -96,7 +96,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <h2 className="text-black pt-[380px] md:pt-[180px] font-semibold text-2xl md:text-3xl mb-8 md:mb-12">
+        <h2 className="text-black pt-[380px] md:pt-[180px] lg:pt-[220px] font-semibold text-2xl md:text-3xl mb-8 md:mb-12">
           Features
         </h2>
         <div className="grid grid-flow-col md:grid-flow-row grid-rows-2 md:grid-rows-1 md:grid-cols-2 md:gap-4 lg:gap-6 max-w-[1440px]">
@@ -115,8 +115,8 @@ export default function Home() {
         </div>
       </section>
       {/*ecosystem*/}
-      <section className="bg-grey-blue w-full flex flex-col items-center py-16">
-        <h2 className="py-2 text-2xl md:text-3xl font-semibold mb-5 md:mb-8">
+      <section className="bg-grey-blue w-full flex flex-col items-center py-16 lg:py-20">
+        <h2 className="py-2 text-2xl md:text-3xl font-semibold mb-5 md:mb-8 lg:mb-12">
           Ecosystem
         </h2>
         <div className="flex flex-col items-center md:items-stretch md:flex-row px-6 gap-3 md:gap-5 justify-center w-full max-w-[1440px]">
@@ -136,7 +136,7 @@ export default function Home() {
         </div>
       </section>
       {/*Governed by*/}
-      <section className="bg-light-grey text-black flex flex-col items-center py-16 px-5 w-full">
+      <section className="bg-light-grey text-black flex flex-col items-center py-20 px-5 w-full">
         <h2 className="text-2xl md:text-3xl md:font-bold font-semibold text-center mb-5">
           Governed by the Community
         </h2>
@@ -144,7 +144,7 @@ export default function Home() {
           ukiyo is a protocol that is entirely decentralized and governed by its
           community
         </p>
-        <a className="btn rounded-full bg-light-orange text-white normal-case mb-8 border-0">
+        <a className="btn rounded-full bg-light-orange text-white normal-case mb-8 border-0 md:mb-20">
           Goberment Forum
         </a>
         <Image src={community} alt="community-img" className="mb-10 md:mb-20" />
