@@ -17,6 +17,7 @@ import hero_placeholder from "./../../public/hero_placeholder.gif";
 import FeatureCard from "@/components/FeatureCard";
 import EcoCard from "@/components/EcoCard";
 import GobernanceCard from "@/components/GobernanceCard";
+import NewsCard from "@/components/NewsCard";
 
 export default function Home() {
   const lockedValue = 0; //ilustrative pourpuses
@@ -26,39 +27,43 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center w-full">
       {/*hero*/}
-      <section className="pb-28 pt-24 px-5 lg:px-8 flex flex-col lg:flex-row items-center max-w-[1440px] relative bg-mainBg">
-        <div className="z-10 lg:order-1 max-w-[510px] lg:max-w-full min-h-[30vh] max-h-[380px]">
-          <LottieContainer
-            lottie={{ animationData: heroImg }}
-            placeholder={hero_placeholder}
-            alt="Hero_placeholder"
-          />
-        </div>
-        <div className="flex flex-col items-center lg:items-start py-6 lg:flex-[0_0_50%]">
-          <h2 className="text-4xl md:text-5xl text-light-orange font-semibold">
-            Ukiyo
-          </h2>
-          <h2 className="text-4xl md:text-5xl font-semibold pb-5">Protocol</h2>
-          <p className="text-center lg:text-left pb-3 text-sm text-[#F7F8FD]/80 font-light">
-            Venture Capital and Private Equity technology stack to kickstart
-            Blockchain and Real-World projects
-          </p>
-          <p className="text-center lg:text-left pb-8 text-sm text-[#F7F8FD]/80 font-light">
-            A community driven protocol powered by Ethereum
-          </p>
-          <div className="grid grid-cols-2 gap-4 w-full max-w-[345px]">
-            <a
-              href="https://www.dropbox.com/s/a7wal9nsw43zlb3/230324 ukiyo Whitepaper v1.pdf?dl=0"
-              className="text-xs md:text-lg bg-light-orange py-2 px-4 rounded-full w-full text-center hover:bg-transparent border-light-orange border-2 hover:text-light-orange"
-            >
-              Whitepaper
-            </a>
-            <a
-              href="https://github.com/ukiyo-protocol"
-              className="text-xs md:text-lg w-full py-2 px-4 rounded-full text-center border-2 hover:bg-transparent hover:border-light-orange hover:border-2 hover:text-light-orange"
-            >
-              Github
-            </a>
+      <section className="w-full bg-mainBg flex flex-col items-center pb-36">
+        <div className="max-w-[1440px] w-full flex flex-col lg:flex-row items-center lg:justify-center relative  pt-24 px-5 lg:px-8">
+          <div className="z-10 lg:order-1 max-w-[510px] lg:max-w-full min-h-[30vh] max-h-[380px]">
+            <LottieContainer
+              lottie={{ animationData: heroImg }}
+              placeholder={hero_placeholder}
+              alt="Hero_placeholder"
+            />
+          </div>
+          <div className="flex flex-col items-center lg:items-start py-6 lg:flex-[0_0_50%]">
+            <h2 className="text-4xl md:text-5xl text-light-orange font-semibold">
+              Ukiyo
+            </h2>
+            <h2 className="text-4xl md:text-5xl font-semibold pb-5">
+              Protocol
+            </h2>
+            <p className="text-center lg:text-left pb-3 text-sm text-[#F7F8FD]/80 font-light">
+              Venture Capital and Private Equity technology stack to kickstart
+              Blockchain and Real-World projects
+            </p>
+            <p className="text-center lg:text-left pb-8 text-sm text-[#F7F8FD]/80 font-light">
+              A community driven protocol powered by Ethereum
+            </p>
+            <div className="grid grid-cols-2 gap-4 w-full max-w-[345px]">
+              <a
+                href="https://www.dropbox.com/s/a7wal9nsw43zlb3/230324 ukiyo Whitepaper v1.pdf?dl=0"
+                className="text-xs md:text-lg bg-light-orange py-2 px-4 rounded-full w-full text-center hover:bg-transparent border-light-orange border-2 hover:text-light-orange"
+              >
+                Whitepaper
+              </a>
+              <a
+                href="https://github.com/ukiyo-protocol"
+                className="text-xs md:text-lg w-full py-2 px-4 rounded-full text-center border-2 hover:bg-transparent hover:border-light-orange hover:border-2 hover:text-light-orange"
+              >
+                Github
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -106,7 +111,7 @@ export default function Home() {
         </div>
       </section>
       {/*ecosystem*/}
-      <section className="bg-grey-blue w-full flex flex-col items-center pt-12 pb-10">
+      <section className="bg-grey-blue w-full flex flex-col items-center py-16">
         <h2 className="py-2 text-2xl md:text-3xl font-semibold mb-5 md:mb-8">
           Ecosystem
         </h2>
@@ -127,19 +132,19 @@ export default function Home() {
         </div>
       </section>
       {/*Governed by*/}
-      <section className="bg-light-grey text-black flex flex-col items-center py-10 px-5">
-        <h2 className="text-2xl font-semibold text-center mb-5">
+      <section className="bg-light-grey text-black flex flex-col items-center py-16 px-5 w-full">
+        <h2 className="text-2xl md:text-3xl md:font-bold font-semibold text-center mb-5">
           Governed by the Community
         </h2>
-        <p className="text-sm font-medium text-center mb-6">
+        <p className="text-sm md:text-[15.53px]font-medium text-center mb-6">
           ukiyo is a protocol that is entirely decentralized and governed by its
           community
         </p>
         <a className="btn rounded-full bg-light-orange text-white normal-case mb-8 border-0">
           Goberment Forum
         </a>
-        <Image src={community} alt="community-img" className="mb-10" />
-        <h3 className="text-2xl font-semibold text-center mb-10">
+        <Image src={community} alt="community-img" className="mb-10 md:mb-20" />
+        <h3 className="text-2xl md:text-[25.23px]font-semibold md:font-bold text-center mb-10 md:mb-16">
           How it works
         </h3>
         <GobernanceCard
@@ -161,6 +166,43 @@ export default function Home() {
             },
           ]}
         />
+      </section>
+      {/*News*/}
+      <section className="bg-light-grey text-black flex flex-col items-center py-16 px-5 w-full">
+        <div className="flex flex-col w-full max-w-[1440px] lg:flex-row lg:px-6">
+          <div className="w-full max-w-[250px]">
+            <h2 className="text-2xl md:text-3xl md:font-bold font-semibold mb-5">
+              In The News
+            </h2>
+            <a className="btn rounded-full bg-light-orange text-white normal-case mb-8 border-0">
+              View all Articles
+            </a>
+          </div>
+          {/*aqui mandamos lo del cms*/}
+          <NewsCard
+            cards={[
+              {
+                title: "How to Become a Venture Capitalist with DeFi",
+                date: "Aug 18, 2023",
+                text: "Let's explore the stories of two accomplished venture capitalists, whom we'll refer to as Alex and Morgan in this blog and gain valuable ins...",
+                href: "link",
+              },
+              {
+                title:
+                  "From Centralization to Decentralization, the Future of Venture Capital and Private Equity Funds: Making Fund Ownership Accessible to Everyone",
+                date: "May 17, 2023",
+                text: "However, with the rise of decentralized finance (DeFi), fund ownership is becoming more accessible to everyone. In this we explore how DeFi ...",
+                href: "link",
+              },
+              {
+                title: "ukiyo Protocol, The Journey So Far",
+                date: "Apr 29, 2023",
+                text: "Developing a DeFi fund that merges venture capital and private equity is no easy feat. It requires extensive research, expertise, and highly...",
+                href: "link",
+              },
+            ]}
+          />
+        </div>
       </section>
     </main>
   );
