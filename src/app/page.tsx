@@ -10,6 +10,7 @@ import staking from "@/lotties/Staking.json";
 //images
 import treasury from "./../assets/images/home.svg";
 import mob from "./../assets/images/mob.svg";
+import eth from "./../assets/images/Eth.svg";
 import community from "./../assets/images/malefemale.png";
 import hero_placeholder from "./../../public/hero_placeholder.gif";
 
@@ -207,6 +208,12 @@ export default function Home() {
             ]}
           />
         </div>
+      </section>
+      {/*Etherium Logo*/}
+      <section className="bg-grey-blue w-full py-10 flex flex-col items-center border-t-[1px] border-light-grey">
+        <h3 className="text-3xl pb-5 font-medium">Powered By</h3>
+        <Image src={eth} alt="img" />
+        <h5 className="py-3">Raise Capital. Invest Capital.</h5>
       </section>
     </main>
   );
