@@ -15,10 +15,12 @@ const config: Config = {
         'mainBg': "url('/mainBg.png')",
       },
       colors:{
-        'dark-blue':'#234e60',
-        'grey-blue': '#0f2c3a',
         'light-blue':'#42778C',
-        'light-orange': '#ff6066',
+        'dark-blue':'##1D3F4F',
+        'grey-blue': '#0F2C3A',
+        'light-orange': '#EF7D7E',
+        'pink-orange': '#F3668E',
+        'text-orange': '#EB646A',
         'light-grey' : '#EFF5F8'
       }
     },
