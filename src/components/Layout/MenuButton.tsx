@@ -2,8 +2,9 @@
 import { useState } from "react";
 import classNames from "classnames";
 import Image from "next/image";
-import { CgMenuRightAlt } from "react-icons/cg";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import LogoRed from "../../assets/images/Logo-red.svg";
+import LogoSvg from "../componentSVGs/LogoSvg";
 
 type menuProps = {
   scroll: number;
@@ -25,21 +26,21 @@ const MenuButton = (props: menuProps) => {
         <label
           htmlFor="my-drawer"
           className={classNames(
-            " btn btn-ghost swap drawer-button px-1 ",
+            " btn btn-ghost swap drawer-button px-1 rounded-full bg-light-orange border-0 border-transparent px-2 max-w-[45px] max-h-[46px]",
             open ? "swap-active" : "",
-            scroll > 0 ? "text-light-orange" : ""
+            scroll > 0 ? "text-white" : ""
           )}
         >
           {/* hamburger icon */}
 
-          <CgMenuRightAlt className="swap-off fill-current h-[32px] w-[32px]" />
+          <HiOutlineMenuAlt3 className="swap-off border-0 w-full max-h-[30px] h-full" />
 
           {/* close icon */}
           <svg
             className="swap-on fill-current  "
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width="100%"
+            height="100%"
             viewBox="0 0 512 512"
           >
             <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
@@ -50,11 +51,10 @@ const MenuButton = (props: menuProps) => {
         <label htmlFor="my-drawer" className="drawer-overlay"></label>
         <nav className="menu  p-4 w-80 min-h-full bg-white text-dark-blue">
           {/* Sidebar content here */}
-          <Image
-            src={LogoRed}
-            alt="Logo"
-            className=" py-5 px-3 w-full max-w-[180px]"
-          />
+          <div className="flex items-center">
+            <LogoSvg className="py-5 px-3 w-full max-w-[85px] text-text-orange" />
+            <h2 className="text-dark-blue text-2xl font-semibold">ukiyo</h2>
+          </div>
           <ul>
             <li>
               <a className="text-light-orange">Home</a>
@@ -64,9 +64,6 @@ const MenuButton = (props: menuProps) => {
             </li>
             <li>
               <a>Docs</a>
-            </li>
-            <li>
-              <a>Governance</a>
             </li>
             <li>
               <a>FAQ</a>

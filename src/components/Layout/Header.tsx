@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import logoWhite from "../../assets/images/newLogo.svg";
+import LogoSvg from "../componentSVGs/LogoSvg";
 
 import React, { useState, useEffect } from "react";
 
@@ -30,32 +30,24 @@ const Header = () => {
       )}
     >
       <div className="flex justify-between max-w-[1440px] w-full">
-        <Image
-          src={logoWhite}
-          alt="Logo"
-          className={classNames("max-h-[46px] max-w-[45px]")}
-          style={{
-            fill: "rgb(255,0,0)",
-          }}
+        <LogoSvg
+          className={classNames(
+            "max-w-[45px] max-h-[46px] lg:max-w-[72px] lg:max-h-[72px] w-full h-full",
+            scrollPosition > 0 ? "text-light-orange" : "text-white"
+          )}
         />
         <MenuButton scroll={scrollPosition} />
-        <nav
-          className={classNames(
-            "hidden lg:flex items-center gap-x-5 px-5",
-            scrollPosition > 0 ? "text-dark-blue" : ""
-          )}
-        >
-          <a className="text-light-orange nav-underline px-2">Home</a>
-          <a className="hover:text-light-orange hover:after:absolute hover:after:h-[2px] hover:after:bg-light-orange hover:after:w-full hover:after:bottom-0 relative hover:after:left-0 px-2">
+        <nav className="hidden lg:flex items-center gap-x-5 px-5 py-2.5 rounded-full bg-light-orange">
+          <a className="text-light-orange bg-white rounded-full px-7 py-3">
+            Home
+          </a>
+          <a className="hover:text-light-orange  hover:bg-white hover:rounded-full px-7 py-3">
             Features
           </a>
-          <a className="hover:text-light-orange hover:after:absolute hover:after:h-[2px] hover:after:bg-light-orange hover:after:w-full hover:after:bottom-0 relative hover:after:left-0 px-2">
+          <a className="hover:text-light-orange  hover:bg-white hover:rounded-full px-7 py-3">
             Docs
           </a>
-          <a className="hover:text-light-orange hover:after:absolute hover:after:h-[2px] hover:after:bg-light-orange hover:after:w-full hover:after:bottom-0 relative hover:after:left-0 px-2">
-            Governance
-          </a>
-          <a className="hover:text-light-orange hover:after:absolute hover:after:h-[2px] hover:after:bg-light-orange hover:after:w-full hover:after:bottom-0 relative hover:after:left-0 px-2">
+          <a className="hover:text-light-orange  hover:bg-white hover:rounded-full px-7 py-3">
             FAQ
           </a>
         </nav>
