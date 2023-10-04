@@ -69,8 +69,35 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="w-full py-10 md:py-12 bg-light-grey relative overflow-hidden flex flex-col items-center px-2 md:px-28">
+        <div className="z-10">
+          <h2 className=" text-2xl sm:text-3xl md:text-[56px] lg:text-7xl text-dark z-10 whitespace-pre-wrap w-full md:leading-[4rem] pb-6">
+            A new type of{"\n"}financial technology{"\n"}for capital formation
+          </h2>
+        </div>
+        <div className="flex flex-col md:flex-row items-center">
+          <LottieContainer
+            lottie={{ animationData: heroImg }}
+            placeholder={hero_placeholder}
+            className="max-w-xs lg:max-w-md z-10"
+            alt="Hero_placeholder"
+          />
+          <div className="z-10">
+            <h3 className="text-dark italic font-medium text-2xl max-w-xs pb-4">
+              We look, we see, and we can&apos;t build the things we dream of
+            </h3>
+            <p className="text-dark font-normal max-w-xs">
+              We&apos;re creating the infrastructure to democratize funding,
+              making it open and permissionless to Eeveryone, Everywhere, All at
+              Once
+            </p>
+          </div>
+        </div>
+        <div className="rounded-full absolute w-[calc(95vw)] h-[calc(95vw)] -top-[calc(95vw/2)] left-[calc((100vw-95vw)/2)] border-2 border-slate-200/80" />
+        <div className="rounded-full absolute w-[calc(48vw)] h-[calc(48vw)] -top-[calc(48vw/2)] left-[calc((100vw-48vw)/2)] border-2 border-slate-200/80" />
+      </section>
       {/*stats and features*/}
-      <section className="bg-white w-full px-5 pb-10 flex flex-col items-center">
+      {/* <section className="bg-white w-full px-5 pb-10 flex flex-col items-center">
         <div className="relative max-w-[1440px] w-full">
           <div className="flex flex-col items-center md:items-start md:px-8 bg-white rounded-3xl drop-shadow-xl p-6 mb-5 -top-12 absolute w-full">
             <h2 className="text-2xl text-black font-semibold">
@@ -114,7 +141,7 @@ export default function Home() {
             lottie={staking}
           />
         </div>
-      </section>
+      </section> */}
       {/*ecosystem*/}
       <section className="bg-grey-blue w-full flex flex-col items-center py-16 lg:py-20">
         <h2 className="py-2 text-2xl md:text-3xl font-semibold mb-5 md:mb-8 lg:mb-12">
