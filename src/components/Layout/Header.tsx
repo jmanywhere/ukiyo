@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import logoWhite from "../../assets/images/newLogo.svg";
+import LogoSvg from "../componentSVGs/LogoSvg";
 
 import React, { useState, useEffect } from "react";
 
@@ -30,13 +30,11 @@ const Header = () => {
       )}
     >
       <div className="flex justify-between max-w-[1440px] w-full">
-        <Image
-          src={logoWhite}
-          alt="Logo"
-          className={classNames("max-h-[46px] max-w-[45px]")}
-          style={{
-            fill: "rgb(255,0,0)",
-          }}
+        <LogoSvg
+          className={classNames(
+            "max-w-[45px] max-h-[46px] w-full h-full",
+            scrollPosition > 0 ? "text-light-orange" : "text-white"
+          )}
         />
         <MenuButton scroll={scrollPosition} />
         <nav
