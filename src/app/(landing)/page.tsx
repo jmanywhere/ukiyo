@@ -3,8 +3,8 @@ import Image from "next/image";
 
 //lotties animation
 import LottieContainer from "@/components/LottieContainer";
-import heroImg from "@/lotties/HeroImageUkiyo.json";
-
+import { promises as fs } from "fs";
+import path from "path";
 //images
 import treasury from "../../assets/images/home.svg";
 import mob from "../../assets/images/mob.svg";
@@ -17,7 +17,11 @@ import EcoCard from "@/components/EcoCard";
 import GobernanceCard from "@/components/GobernanceCard";
 import NewsCard from "@/components/NewsCard";
 
-export default function Home() {
+export default async function Home() {
+  const lottiePath = path.join(process.cwd(), "lotties");
+  const heroImg = JSON.parse(
+    await fs.readFile(lottiePath + "/HeroImageUkiyo.json", "utf8")
+  );
   return (
     <main className="min-h-screen flex flex-col items-center w-full bg-light-grey-bg">
       {/*hero*/}
