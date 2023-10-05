@@ -4,13 +4,10 @@ import Image from "next/image";
 //lotties animation
 import LottieContainer from "@/components/LottieContainer";
 import heroImg from "@/lotties/HeroImageUkiyo.json";
-import ventures from "@/lotties/Ventures.json";
-import staking from "@/lotties/Staking.json";
 
 //images
 import treasury from "../../assets/images/home.svg";
 import mob from "../../assets/images/mob.svg";
-import eth from "../../assets/images/Eth.svg";
 import community from "../../assets/images/malefemale.png";
 import hero_placeholder from "../../../public/hero_placeholder.gif";
 
@@ -21,10 +18,6 @@ import GobernanceCard from "@/components/GobernanceCard";
 import NewsCard from "@/components/NewsCard";
 
 export default function Home() {
-  const lockedValue = 0; //ilustrative pourpuses
-  const tokenPrice = 0; //ilustrative pourpuses
-  const tokenDeployed = 0; //ilustrative pourpuses
-
   return (
     <main className="min-h-screen flex flex-col items-center w-full bg-light-grey-bg">
       {/*hero*/}
