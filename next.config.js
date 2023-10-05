@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  swcMinify: false,
   webpack: (config, context) => {
     if (config.plugins) {
       config.plugins.push(

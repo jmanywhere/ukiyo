@@ -15,14 +15,13 @@ export default function LottieContainer(props: {
   const [animationLoaded, setAnimationLoaded] = useState(false);
   const [shouldFetch, setShouldFetch] = useState(false);
 
-  const data: any = undefined;
-  // const { data } = useSWR(
-  //   shouldFetch ? "api/?lottie=" + lottiePath : null,
-  //   (url) => fetch(url).then((r) => r.json())
-  // );
+  const { data } = useSWR(
+    shouldFetch ? "api/?lottie=" + lottiePath : null,
+    (url) => fetch(url).then((r) => r.json())
+  );
 
   useLayoutEffect(() => {
-    setShouldFetch(true);
+    setTimeout(() => setShouldFetch(true), 1500);
   }, [setShouldFetch]);
 
   return (
@@ -31,7 +30,7 @@ export default function LottieContainer(props: {
         <Image
           src={placeholder}
           alt={alt}
-          className={animationData ? "hidden" : ""}
+          className={data?.lottie || animationData ? "hidden" : ""}
         />
       )}
       <Lottie loop play animationData={data?.lottie || animationData} />

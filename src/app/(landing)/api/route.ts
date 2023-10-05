@@ -10,7 +10,9 @@ export async function GET(request: NextRequest) {
   const fileContents = await fs.readFile(
     jsonDirectory + "/"+lottieParam+".json",
     "utf8"
-  );
+    );
+  const object = JSON.parse(fileContents)
+    console.log("FETCH API",{ jsonDirectory, lottieParam, fileName: object?.["nm"] || "fuuuuuuuk" })
   //Return the content of the data file in json format
-  return Response.json({ lottie: JSON.parse(fileContents) })
+  return Response.json({ lottie: object })
 }
