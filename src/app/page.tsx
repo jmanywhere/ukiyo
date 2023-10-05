@@ -69,9 +69,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full py-10 md:py-12 bg-light-grey relative overflow-hidden flex flex-col items-center px-2 md:px-28">
+      <section className="w-full py-16 lg:py-32 bg-light-grey relative overflow-hidden flex flex-col items-center px-2 md:px-28">
         <div className="z-10">
-          <h2 className=" text-2xl sm:text-3xl md:text-[56px] lg:text-7xl text-dark z-10 whitespace-pre-wrap w-full md:leading-[4rem] pb-6">
+          <h2 className="text-2xl xs:text-3xl md:text-[56px] lg:text-7xl text-dark z-10 whitespace-pre-wrap w-full md:leading-[4rem] lg:leading-[5.5rem] pb-6 md:pb-9 lg:pb-14">
             A new type of{"\n"}financial technology{"\n"}for capital formation
           </h2>
         </div>
@@ -95,6 +95,7 @@ export default function Home() {
         </div>
         <div className="rounded-full absolute w-[calc(95vw)] h-[calc(95vw)] -top-[calc(95vw/2)] left-[calc((100vw-95vw)/2)] border-2 border-slate-200/80" />
         <div className="rounded-full absolute w-[calc(48vw)] h-[calc(48vw)] -top-[calc(48vw/2)] left-[calc((100vw-48vw)/2)] border-2 border-slate-200/80" />
+        <div className="absolute w-[90vw] h-[15vw] striped-bg bottom-0 left-0 max-h-[80px] " />
       </section>
       {/*stats and features*/}
       {/* <section className="bg-white w-full px-5 pb-10 flex flex-col items-center">
