@@ -7,10 +7,6 @@ const nextConfig = {
           resourceRegExp: /^(lokijs|pino-pretty|encoding)$/,
         }),
       );
-      config.module.rules.push({
-        test: /\.json$/,
-        use: ['json-loader'],
-      })
     }
     return config
   },
