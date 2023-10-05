@@ -16,7 +16,6 @@ import GobernanceCard from "@/components/GobernanceCard";
 import NewsCard from "@/components/NewsCard";
 
 export default async function Home() {
-  const heroImg = await getHeroImage();
   return (
     <main className="min-h-screen flex flex-col items-center w-full bg-light-grey-bg">
       {/*hero*/}
@@ -24,7 +23,7 @@ export default async function Home() {
         <div className="pb-28 pt-24 px-5 lg:px-8 flex flex-col lg:flex-row items-center max-w-[1440px] relative">
           <div className="z-10 lg:order-1 max-w-[510px] lg:max-w-full min-h-[30vh] max-h-[380px] flex items-center justify-center">
             <LottieContainer
-              lottie={{ animationData: heroImg }}
+              lottiePath="HeroImageUkiyo"
               placeholder={hero_placeholder}
               className="max-w-[90%]"
               alt="Hero_placeholder"
@@ -70,7 +69,7 @@ export default async function Home() {
         </div>
         <div className="flex flex-col md:flex-row items-center">
           <LottieContainer
-            lottie={{ animationData: heroImg }}
+            lottiePath="HeroImageUkiyo"
             placeholder={hero_placeholder}
             className="max-w-xs lg:max-w-xl z-10"
             alt="Hero_placeholder"
@@ -303,17 +302,4 @@ export default async function Home() {
       </section> */}
     </main>
   );
-}
-import path from "path";
-import { promises as fs } from "fs";
-async function getHeroImage() {
-  //Find the absolute path of the json directory
-  const jsonDirectory = path.join(process.cwd(), "lotties");
-  //Read the json data file data.json
-  const fileContents = await fs.readFile(
-    jsonDirectory + "/HeroImageUkiyo.json",
-    "utf8"
-  );
-  //Return the content of the data file in json format
-  return JSON.parse(fileContents);
 }
