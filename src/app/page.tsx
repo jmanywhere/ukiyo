@@ -69,6 +69,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Secondary Hero */}
       <section className="w-full py-16 lg:py-32 bg-light-grey relative overflow-hidden flex flex-col items-center px-2 md:px-28">
         <div className="z-10">
           <h2 className="text-2xl xs:text-3xl md:text-[56px] lg:text-7xl text-dark z-10 whitespace-pre-wrap w-full md:leading-[4rem] lg:leading-[5.5rem] pb-6 md:pb-9 lg:pb-14">
@@ -79,7 +80,7 @@ export default function Home() {
           <LottieContainer
             lottie={{ animationData: heroImg }}
             placeholder={hero_placeholder}
-            className="max-w-xs lg:max-w-md z-10"
+            className="max-w-xs lg:max-w-lg z-10"
             alt="Hero_placeholder"
           />
           <div className="z-10">
