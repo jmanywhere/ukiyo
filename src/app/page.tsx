@@ -39,7 +39,7 @@ export default function Home() {
       {/* Secondary Hero */}
       <section className="w-full py-16 lg:py-32  relative overflow-hidden flex flex-col items-center px-2 md:px-28">
         <div className="z-10">
-          <h2 className="text-2xl xs:text-3xl md:text-[56px] lg:text-7xl text-dark-text z-10 whitespace-pre-wrap w-full md:leading-[4rem] lg:leading-[5.5rem] pb-6 md:pb-9 lg:pb-14">
+          <h2 className="text-2xl xs:text-3xl md:text-[56px] lg:text-7xl text-dark-text z-10 whitespace-pre-wrap md:leading-[4rem] lg:leading-[5.5rem] pb-6 md:pb-9 lg:pb-14">
             A new type of{"\n"}financial technology{"\n"}for capital formation
           </h2>
         </div>
@@ -51,12 +51,12 @@ export default function Home() {
             alt="Hero_placeholder"
           />
           <div className="z-10">
-            <h3 className="text-dark-text italic font-medium text-2xl max-w-xs pb-4">
+            <h3 className="text-dark-text italic font-medium text-2xl max-w-sm pb-4">
               We look, we see, and we can&apos;t build the things we dream of
             </h3>
             <p className="text-dark-text font-normal max-w-xs">
               We&apos;re creating the infrastructure to democratize funding,
-              making it open and permissionless to Eeveryone, Everywhere, All at
+              making it open and permissionless to Everyone, Everywhere, All at
               Once
             </p>
           </div>
@@ -67,7 +67,63 @@ export default function Home() {
       </section>
 
       {/* How it works */}
-      <section className="w-full py-16 lg:py-32 bg-light-grey relative overflow-hidden flex flex-col items-center px-2 md:px-28"></section>
+      <section className="w-full overflow-hidden">
+        <div className="px-[calc((100vw-95vw)/2)] z-10 relative">
+          <div className="xs:border-x-2 border-dark-text/10 py-16 lg:py-32 flex flex-col items-center justify-center">
+            <div className="container z-10">
+              <h3 className="text-4xl md:text-[56px] lg:text-7xl font-normal w-full text-dark-text lg:pb-16 pb-12 pl-4 md:pl-0">
+                How it works
+              </h3>
+              <div className="flex lg:flex-row flex-col lg:items-start items-center justify-center lg:justify-normal gap-6">
+                <div className="bg-white rounded-2xl border-[1px] border-light-grey/50 drop-shadow-2xl md:px-10 px-6 md:pt-8 md:pb-12 py-6 max-w-[370px] min-h-[261px]">
+                  <div className="bg-pink-orange rounded-full w-7 h-7 text-center py-1 font-medium text-sm">
+                    1
+                  </div>
+                  <h4 className="text-dark-text font-semibold text-lg pt-4 md:pt-8 pb-4">
+                    A Global Repository of Financial and Legal Contracts
+                  </h4>
+                  <p className="font-normal text-dark-text">
+                    Fully composable, permisionless, and dynamic
+                  </p>
+                </div>
+                <div className="bg-white rounded-2xl border-[1px] border-light-grey/50 drop-shadow-2xl md:px-10 px-6 md:pt-8 md:pb-12 py-6 max-w-[370px] min-h-[261px] lg:mt-20">
+                  <div className="bg-pink-orange rounded-full w-7 h-7 text-center py-1 font-medium text-sm">
+                    2
+                  </div>
+                  <h4 className="text-dark-text font-semibold text-lg pt-4 md:pt-8 pb-4">
+                    Identity and Reputation
+                  </h4>
+                  <p className="font-normal text-dark-text">
+                    IPFS encrypted ERC-1238 granting access to verified data on
+                    individuals
+                  </p>
+                </div>
+                <div className="bg-white rounded-2xl border-[1px] border-light-grey/50 drop-shadow-2xl md:px-10 px-6 md:pt-8 md:pb-12 py-6 max-w-[370px] min-h-[261px]">
+                  <div className="bg-pink-orange rounded-full w-7 h-7 text-center py-1 font-medium text-sm">
+                    3
+                  </div>
+                  <h4 className="text-dark-text font-semibold text-lg pt-4 md:pt-8 pb-4">
+                    Execute Contracts and Stay Compliant
+                  </h4>
+                  <p className="font-normal text-dark-text">
+                    Stay on top of regulations, compliance, and tax obligations
+                    without the need to move a finger
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="absolute bottom-0 left-0 w-[100vw] px-[calc((100vw-90vw)/2)]">
+              <Image
+                src="/backgrounds/Electronic_Paths.png"
+                alt="electronics"
+                width={1478}
+                height={584}
+                className="w-[100vw] h-auto z-0 pointer-events-none"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/*stats and features*/}
       {/* <section className="bg-white w-full px-5 pb-10 flex flex-col items-center">
