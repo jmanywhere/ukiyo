@@ -8,11 +8,11 @@ import ventures from "@/lotties/Ventures.json";
 import staking from "@/lotties/Staking.json";
 
 //images
-import treasury from "./../assets/images/home.svg";
-import mob from "./../assets/images/mob.svg";
-import eth from "./../assets/images/Eth.svg";
-import community from "./../assets/images/malefemale.png";
-import hero_placeholder from "./../../public/hero_placeholder.gif";
+import treasury from "../../assets/images/home.svg";
+import mob from "../../assets/images/mob.svg";
+import eth from "../../assets/images/Eth.svg";
+import community from "../../assets/images/malefemale.png";
+import hero_placeholder from "../../../public/hero_placeholder.gif";
 
 //components
 import FeatureCard from "@/components/FeatureCard";
