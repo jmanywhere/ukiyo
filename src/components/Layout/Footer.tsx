@@ -15,7 +15,7 @@ const Footer = () => {
               <SuscribeBtn />
             </div>
             {/*Links*/}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 place-content-evenly w-full px-6 ">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 place-content-evenly w-full px-6 max-w-[375px] md:max-w-full">
               <div className="grid grid-rows-1 gap-4 text-light-grey">
                 <h2 className="pb-2 text-white font-medium">Quick Links</h2>
                 <a className="text-sm pb-2">Home</a>
@@ -48,7 +48,7 @@ const Footer = () => {
               Copyright © 2023 ukiyo Protocol. All rights reserved.
             </p>
             {/*Socials*/}
-            <div className="flex justify-center items-center gap-5 rounded-full w-full lg:max-w-[500px] lg:max-w-[300px] pt-2 pb-5 lg:items-start lg:py-0 lg:px-10">
+            <div className="flex justify-center items-center gap-5 rounded-full w-full lg:max-w-[250px] pt-2 pb-5 lg:items-start lg:py-0 lg:px-10">
               <a className="text-white">
                 <RiTwitterXLine className="text-base" />
               </a>
