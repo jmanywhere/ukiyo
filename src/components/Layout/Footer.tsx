@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="max-w-[1440px]  flex flex-col items-center w-full">
         <div className="w-full flex flex-col items-center xl:flex-row xl:justify-center xl:items-start xl:px-6">
           <div className="flex flex-col lg:flex-row items-center lg:justify-between  lg:items-start w-full pb-5 md:px-8   max-w-[1440px] ">
-            <div className="mb-6 lg:mr-16">
+            <div className="mb-6 lg:mr-16 flex flex-col items-center">
               <LogoSvg width={88} height={90} fill="white" />
               <SuscribeBtn />
             </div>
