@@ -104,10 +104,10 @@ export default function Home() {
         <div className="px-[calc((100vw-95vw)/2)] z-10 relative">
           <div className="xs:border-x-2 border-dark-text/10 py-16 lg:py-32 flex flex-col items-center justify-center">
             <div className="container z-10">
-              <h3 className="text-4xl md:text-[56px] lg:text-7xl font-normal w-full text-dark-text lg:pb-16 pb-12 pl-4 md:pl-0">
+              <h3 className="text-4xl md:text-[56px] lg:text-7xl font-normal w-full text-dark-text lg:pb-16 pb-12 pl-4">
                 How it works
               </h3>
-              <div className="flex lg:flex-row flex-col lg:items-start items-center justify-center lg:justify-normal gap-6">
+              <div className="flex lg:flex-row flex-col lg:items-start items-center justify-center lg:justify-normal gap-6 px-4">
                 <div className="bg-white rounded-2xl border-[1px] border-light-grey/50 drop-shadow-2xl md:px-10 px-6 md:pt-8 md:pb-12 py-6 max-w-[370px] min-h-[261px]">
                   <div className="bg-pink-orange rounded-full w-7 h-7 text-center py-1 font-medium text-sm">
                     1
