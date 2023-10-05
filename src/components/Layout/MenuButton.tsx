@@ -52,7 +52,7 @@ const MenuButton = (props: menuProps) => {
         <nav className="menu  p-4 w-80 min-h-full bg-white text-dark-blue">
           {/* Sidebar content here */}
           <div className="flex items-center">
-            <LogoSvg className="py-5 px-3 w-full max-w-[85px] text-text-orange" />
+            <LogoSvg width={85} height={86} fill="#EB646A" />
             <h2 className="text-dark-blue text-2xl font-semibold">ukiyo</h2>
           </div>
           <ul>
