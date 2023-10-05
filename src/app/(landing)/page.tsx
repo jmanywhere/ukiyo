@@ -70,7 +70,7 @@ export default function Home() {
         </div>
       </section>
       {/* Secondary Hero */}
-      <section className="w-full py-16 lg:py-32  relative overflow-hidden flex flex-col items-center px-2 md:px-28">
+      <section className="w-full py-16 lg:py-32  relative overflow-hidden flex flex-col items-center px-2 md:px-24 xl:px-28">
         <div className="z-10">
           <h2 className="text-2xl xs:text-3xl md:text-[56px] lg:text-7xl text-dark-text z-10 whitespace-pre-wrap md:leading-[4rem] lg:leading-[5.5rem] pb-6 md:pb-9 lg:pb-14">
             A new type of{"\n"}financial technology{"\n"}for capital formation
@@ -80,7 +80,7 @@ export default function Home() {
           <LottieContainer
             lottie={{ animationData: heroImg }}
             placeholder={hero_placeholder}
-            className="max-w-xs lg:max-w-lg z-10"
+            className="max-w-xs lg:max-w-xl z-10"
             alt="Hero_placeholder"
           />
           <div className="z-10">
@@ -156,6 +156,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* News */}
+      <section className="w-full px-4 md:px-8">
+        <div className="border-x-[1px]">stuff HERE</div>
       </section>
 
       {/*stats and features*/}
