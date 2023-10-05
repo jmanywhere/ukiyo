@@ -1,5 +1,7 @@
+"use client";
 //next
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 //lotties animation
 import LottieContainer from "@/components/LottieContainer";
@@ -9,6 +11,8 @@ import treasury from "../../assets/images/home.svg";
 import mob from "../../assets/images/mob.svg";
 import community from "../../assets/images/malefemale.png";
 import hero_placeholder from "../../../public/hero_placeholder.gif";
+import heroImgMobile from "../../assets/images/HeroImgMobile.png";
+import heroImgDesktop from "../../assets/images/HeroImgDesktop.png";
 
 //components
 import EcoCard from "@/components/EcoCard";
@@ -20,29 +24,48 @@ import { RiTwitterXLine, RiLinkedinFill } from "react-icons/ri";
 import { LiaTelegram } from "react-icons/lia";
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      const windowWidth = window.innerWidth;
+      setIsMobile(windowWidth < 765);
+    };
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => {
+      window.removeEventListener("resize", checkScreenSize);
+    };
+  });
+
+  const heroImg = isMobile ? heroImgMobile : heroImgDesktop;
+
   return (
     <main className="min-h-screen flex flex-col items-center w-full bg-light-grey-bg">
       {/*hero*/}
-      <section className="bg-grey-blue hero-gradient w-full max-w-[1440px] flex flex-col items-center justify-center pt-[100px]">
-        <div className="w-full bg-hero-background bg-no-repeat bg-center py-40">
-          <h2 className="text-6xl  text-center">ukiyo Protocol</h2>
-          <p className="text-base  text-center ">
-            Disrupting the way your assets move around the world
-          </p>
-        </div>
-        <div className="flex">
-          <a>Github</a>
-          <a>Manifesto</a>
-          <div className="flex justify-center items-center gap-5 rounded-full w-full lg:max-w-[250px] pt-2 pb-5 lg:items-start lg:py-0 lg:px-10">
-            <a className="text-white">
-              <RiTwitterXLine className="text-base" />
-            </a>
-            <a className="text-white ">
-              <LiaTelegram className="text-base mr-[1px]" />
-            </a>
-            <a className="text-white ">
-              <RiLinkedinFill className="text-base mr-[1px]" />
-            </a>
+      <section className="bg-grey-blue hero-gradient w-full flex flex-col items-center justify-center pt-[100px]">
+        <div className="w-full max-w-[1440px] flex flex-col items-center">
+          <Image src={heroImg} alt="ukiyo protocol" className="pb-20  w-full" />
+          <div className="flex justify-between items center  w-full px-5 md:px-16 pb-8 gap-1">
+            <div className="flex items-center md:justify-start gap-1 sm:gap-5 md:gap-1 w-full">
+              <a className="rounded-full bg-white text-grey-blue btn normal-case font-medium text-base max-w-[calc(30vw)] md:max-w-[144px] w-full">
+                Github
+              </a>
+              <a className="rounded-full bg-light-orange btn text-white normal-case font-medium text-base max-w-[calc(30vw)] md:max-w-[144px] w-full">
+                Manifesto
+              </a>
+            </div>
+            <div className="flex justify-center items-center bg-white text-grey-blue rounded-full max-w-[calc(27vw)] w-full gap-3 md:max-w-[144px]">
+              <a>
+                <RiTwitterXLine className="text-base" />
+              </a>
+              <a>
+                <LiaTelegram className="text-base" />
+              </a>
+              <a>
+                <RiLinkedinFill className="text-base" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
