@@ -6,7 +6,7 @@ import { LiaTelegram } from "react-icons/lia";
 
 const Footer = () => {
   return (
-    <footer className="footer-gradient pt-16 pb-8 w-full flex flex-col items-center border-0">
+    <footer className="footer-gradient-sm md:footer-gradient pt-16 pb-8 w-full flex flex-col items-center border-0">
       <div className="max-w-[1440px]  flex flex-col items-center w-full">
         <div className="w-full flex flex-col items-center xl:flex-row xl:justify-center xl:items-start xl:px-6">
           <div className="flex flex-col lg:flex-row items-center lg:justify-between  lg:items-start w-full pb-5 md:px-8   max-w-[1440px] ">
@@ -16,27 +16,29 @@ const Footer = () => {
             </div>
             {/*Links*/}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 place-content-evenly w-full px-6 max-w-[375px] md:max-w-full">
-              <div className="grid grid-rows-1 gap-4 text-light-grey">
+              <div className="flex flex-col gap-4 text-light-grey">
                 <h2 className="pb-2 text-white font-medium">Quick Links</h2>
                 <a className="text-sm pb-2">Home</a>
                 <a className="text-sm pb-2">Blog</a>
                 <a className="text-sm pb-2">FAQ&apos;s</a>
               </div>
-              <div className="grid grid-rows-1 gap-4 text-light-grey">
+              <div className="flex flex-col gap-4 text-light-grey">
                 <h2 className="pb-2 text-white font-medium">Learn</h2>
                 <a className="text-sm pb-2">Documentation</a>
                 <a className="text-sm pb-2">Manifesto</a>
                 <a className="text-sm pb-2">T&C&apos;s</a>
               </div>
-              <div className="grid grid-rows-1 gap-4 text-light-grey">
+              <div className="flex flex-col gap-4 text-light-grey">
                 <h2 className="pb-2 text-white font-medium">Ecosystem</h2>
                 <a className="text-sm pb-2">Ventures</a>
                 <a className="text-sm pb-2">Studios</a>
+                <div />
               </div>
-              <div className="grid grid-rows-1 gap-4 text-light-grey">
+              <div className="flex flex-col gap-4 text-light-grey">
                 <h2 className="pb-2 text-white font-medium">Contact Us</h2>
                 <a className="text-sm pb-2">Contact</a>
                 <a className="text-sm pb-2">Brand Assets</a>
+                <div />
               </div>
             </div>
           </div>
