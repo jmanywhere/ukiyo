@@ -1,7 +1,7 @@
 "use client";
 import Lottie, { type LottieComponentProps } from "lottie-react";
 import Image, { type StaticImageData } from "next/image";
-import { useLayoutEffect, useState } from "react";
+import { useState, useLayoutEffect } from "react";
 import useSWR from "swr";
 
 export default function LottieContainer(props: {
@@ -12,14 +12,16 @@ export default function LottieContainer(props: {
 }) {
   const { placeholder, lottiePath, alt, className } = props;
   const [animationLoaded, setAnimationLoaded] = useState(false);
-  const [animation, setAnimation] = useState(null);
+  const [shouldFetch, setShouldFetch] = useState(false);
 
   const { data, error, isLoading } = useSWR(
-    "api/?lottie=" + lottiePath,
+    shouldFetch ? "api/?lottie=" + lottiePath : null,
     (url) => fetch(url).then((r) => r.json())
   );
 
-  console.log({ data, error, isLoading });
+  useLayoutEffect(() => {
+    setShouldFetch(true);
+  }, [setShouldFetch]);
 
   return (
     <div className={className}>
