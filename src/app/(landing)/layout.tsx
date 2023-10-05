@@ -1,10 +1,10 @@
 import { ClientProviders } from "@/providers/ClientSide";
-import "./globals.css";
+import "../globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 
-import Header from "./../components/Layout/Header";
-import Footer from "./../components/Layout/Footer";
+import Header from "../../components/Layout/Header";
+import Footer from "../../components/Layout/Footer";
 import classNames from "classnames";
 
 const poppins = Poppins({

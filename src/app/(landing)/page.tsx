@@ -3,20 +3,14 @@ import Image from "next/image";
 
 //lotties animation
 import LottieContainer from "@/components/LottieContainer";
-import heroImg from "@/lotties/HeroImageUkiyo.json";
-import ventures from "@/lotties/Ventures.json";
-import staking from "@/lotties/Staking.json";
-
+import heroLottie from "@/../../public/lotties/HeroImageUkiyo.json";
 //images
-import treasury from "./../assets/images/home.svg";
-import HeroImage from "./../assets/images/HeroImage.png";
-import mob from "./../assets/images/mob.svg";
-import eth from "./../assets/images/Eth.svg";
-import community from "./../assets/images/malefemale.png";
-import hero_placeholder from "./../../public/hero_placeholder.gif";
+import treasury from "../../assets/images/home.svg";
+import mob from "../../assets/images/mob.svg";
+import community from "../../assets/images/malefemale.png";
+import hero_placeholder from "../../../public/hero_placeholder.gif";
 
 //components
-import FeatureCard from "@/components/FeatureCard";
 import EcoCard from "@/components/EcoCard";
 import GobernanceCard from "@/components/GobernanceCard";
 import NewsCard from "@/components/NewsCard";
@@ -26,10 +20,6 @@ import { RiTwitterXLine, RiLinkedinFill } from "react-icons/ri";
 import { LiaTelegram } from "react-icons/lia";
 
 export default function Home() {
-  const lockedValue = 0; //ilustrative pourpuses
-  const tokenPrice = 0; //ilustrative pourpuses
-  const tokenDeployed = 0; //ilustrative pourpuses
-
   return (
     <main className="min-h-screen flex flex-col items-center w-full bg-light-grey-bg">
       {/*hero*/}
@@ -57,7 +47,7 @@ export default function Home() {
         </div>
       </section>
       {/* Secondary Hero */}
-      <section className="w-full py-16 lg:py-32  relative overflow-hidden flex flex-col items-center px-2 md:px-28">
+      <section className="w-full py-16 lg:py-32  relative overflow-hidden flex flex-col items-center px-2 md:px-24 xl:px-28">
         <div className="z-10">
           <h2 className="text-2xl xs:text-3xl md:text-[56px] lg:text-7xl text-dark-text z-10 whitespace-pre-wrap md:leading-[4rem] lg:leading-[5.5rem] pb-6 md:pb-9 lg:pb-14">
             A new type of{"\n"}financial technology{"\n"}for capital formation
@@ -65,9 +55,10 @@ export default function Home() {
         </div>
         <div className="flex flex-col md:flex-row items-center">
           <LottieContainer
-            lottie={{ animationData: heroImg }}
+            lottiePath="HeroImageUkiyo"
+            animationData={heroLottie}
             placeholder={hero_placeholder}
-            className="max-w-xs lg:max-w-lg z-10"
+            className="max-w-xs lg:max-w-xl z-10"
             alt="Hero_placeholder"
           />
           <div className="z-10">
@@ -91,10 +82,10 @@ export default function Home() {
         <div className="px-[calc((100vw-95vw)/2)] z-10 relative">
           <div className="xs:border-x-2 border-dark-text/10 py-16 lg:py-32 flex flex-col items-center justify-center">
             <div className="container z-10">
-              <h3 className="text-4xl md:text-[56px] lg:text-7xl font-normal w-full text-dark-text lg:pb-16 pb-12 pl-4 md:pl-0">
+              <h3 className="text-4xl md:text-[56px] lg:text-7xl font-normal w-full text-dark-text lg:pb-16 pb-12 pl-4">
                 How it works
               </h3>
-              <div className="flex lg:flex-row flex-col lg:items-start items-center justify-center lg:justify-normal gap-6">
+              <div className="flex lg:flex-row flex-col lg:items-start items-center justify-center lg:justify-normal gap-6 px-4">
                 <div className="bg-white rounded-2xl border-[1px] border-light-grey/50 drop-shadow-2xl md:px-10 px-6 md:pt-8 md:pb-12 py-6 max-w-[370px] min-h-[261px]">
                   <div className="bg-pink-orange rounded-full w-7 h-7 text-center py-1 font-medium text-sm">
                     1
@@ -143,6 +134,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* News */}
+      <section className="w-full px-4 md:px-8">
+        <div className="border-x-[1px]">stuff HERE</div>
       </section>
 
       {/*stats and features*/}

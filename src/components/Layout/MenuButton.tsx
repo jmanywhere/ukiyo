@@ -7,7 +7,7 @@ import LogoRed from "../../assets/images/Logo-red.svg";
 import LogoSvg from "../componentSVGs/LogoSvg";
 
 type menuProps = {
-  scroll: number;
+  scroll: boolean;
 };
 
 const MenuButton = (props: menuProps) => {
@@ -26,9 +26,9 @@ const MenuButton = (props: menuProps) => {
         <label
           htmlFor="my-drawer"
           className={classNames(
-            " btn btn-ghost swap drawer-button px-1 rounded-full bg-light-orange border-0 border-transparent px-2 max-w-[45px] max-h-[46px]",
+            " btn btn-ghost swap drawer-button rounded-full bg-light-orange border-0 border-transparent px-2 max-w-[45px] max-h-[46px]",
             open ? "swap-active" : "",
-            scroll > 0 ? "text-white" : ""
+            scroll ? "text-white" : ""
           )}
         >
           {/* hamburger icon */}
@@ -52,7 +52,7 @@ const MenuButton = (props: menuProps) => {
         <nav className="menu  p-4 w-80 min-h-full bg-white text-dark-blue">
           {/* Sidebar content here */}
           <div className="flex items-center">
-            <LogoSvg className="py-5 px-3 w-full max-w-[85px] text-text-orange" />
+            <LogoSvg width={85} height={86} fill="#EB646A" />
             <h2 className="text-dark-blue text-2xl font-semibold">ukiyo</h2>
           </div>
           <ul>

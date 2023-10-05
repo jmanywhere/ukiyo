@@ -26,12 +26,12 @@ const FeatureCard = (props: cardProps) => {
       >
         {btnText}
       </a>
-      <LottieContainer
+      {/* <LottieContainer
         className="max-w-[120px] md:max-w-[250px]"
         lottie={{
           animationData: lottie,
         }}
-      />
+      /> */}
     </div>
   );
 };

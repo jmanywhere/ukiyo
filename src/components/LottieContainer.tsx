@@ -1,26 +1,32 @@
 "use client";
-import Lottie, { type LottieComponentProps } from "lottie-react";
+import Lottie from "react-lottie-player";
 import Image, { type StaticImageData } from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function LottieContainer(props: {
   placeholder?: StaticImageData;
+  animationData?: any;
   alt?: string;
-  lottie: LottieComponentProps;
+  lottiePath: string;
   className?: string;
 }) {
-  const { placeholder, lottie, alt, className } = props;
+  const { placeholder, lottiePath, alt, animationData, className } = props;
   const [animationLoaded, setAnimationLoaded] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setAnimationLoaded(true), 1500);
+  }, [setAnimationLoaded]);
+
   return (
     <div className={className}>
       {!!(placeholder && alt) && (
         <Image
           src={placeholder}
           alt={alt}
-          className={animationLoaded ? "hidden" : ""}
+          className={animationLoaded && animationData ? "hidden" : ""}
         />
       )}
-      <Lottie {...lottie} onLoadedImages={() => setAnimationLoaded(true)} />
+      <Lottie loop play animationData={animationData} />
     </div>
   );
 }
