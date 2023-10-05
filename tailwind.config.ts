@@ -21,7 +21,7 @@ const config: Config = {
         'light-orange': '#EF7D7E',
         'pink-orange': '#F3668E',
         'text-orange': '#EB646A',
-        'light-grey' : '#EFF5F8'
+        'light-grey' : '#9AA2A6'
       }
     },
   },

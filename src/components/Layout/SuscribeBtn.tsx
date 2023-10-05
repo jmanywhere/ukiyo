@@ -1,16 +1,16 @@
-import { GoArrowRight } from "react-icons/go";
+import { IoIosArrowForward } from "react-icons/io";
 
 const SuscribeBtn = () => {
   return (
     <div className="join border-0 py-4">
       <input
         type="text"
-        className="input join-item rounded-full bg-white/10 border-white/10 placeholder:text-white placeholder:text-xs border-0 h-auto font-bold mr-[1px]"
+        className="input join-item rounded-full transparent bg-grey-blue border-white/20 placeholder:text-light-gray placeholder:text-xs h-auto font-normal mr-[1px] border-r-0"
         placeholder="Subscribe to our Newsletter"
       />
-      <div className="join-item border-white/10 rounded-r-full bg-white/10 rounded-r-full border-0 p-2">
-        <a className="btn rounded-full font-bold text-3xl bg-light-orange text-black border-[1px] border-white/20">
-          <GoArrowRight />
+      <div className="join-item rounded-r-full bg-grey-blue  border-white/20 p-2 border-l-0 border-[1px]">
+        <a className="btn rounded-full font-bold text-lg bg-pink-orange text-black border-[1px] text-white ">
+          <IoIosArrowForward />
         </a>
       </div>
     </div>
