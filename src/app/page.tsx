@@ -21,6 +21,10 @@ import EcoCard from "@/components/EcoCard";
 import GobernanceCard from "@/components/GobernanceCard";
 import NewsCard from "@/components/NewsCard";
 
+//icons
+import { RiTwitterXLine, RiLinkedinFill } from "react-icons/ri";
+import { LiaTelegram } from "react-icons/lia";
+
 export default function Home() {
   const lockedValue = 0; //ilustrative pourpuses
   const tokenPrice = 0; //ilustrative pourpuses
@@ -29,11 +33,27 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center w-full bg-light-grey-bg">
       {/*hero*/}
-      <section className="bg-grey-blue hero-gradient w-full flex flex-col items-center pt-[100px]">
-        <div className="max-w-[calc(75vw)] w-full relative py">
-          <Image src={HeroImage} alt="background" className="w-full" />
-          <h2 className="text-6xl absolute z-10">ukiyo Protocol</h2>
-          <p></p>
+      <section className="bg-grey-blue hero-gradient w-full max-w-[1440px] flex flex-col items-center justify-center pt-[100px]">
+        <div className="w-full bg-hero-background bg-no-repeat bg-center py-40">
+          <h2 className="text-6xl  text-center">ukiyo Protocol</h2>
+          <p className="text-base  text-center ">
+            Disrupting the way your assets move around the world
+          </p>
+        </div>
+        <div className="flex">
+          <a>Github</a>
+          <a>Manifesto</a>
+          <div className="flex justify-center items-center gap-5 rounded-full w-full lg:max-w-[250px] pt-2 pb-5 lg:items-start lg:py-0 lg:px-10">
+            <a className="text-white">
+              <RiTwitterXLine className="text-base" />
+            </a>
+            <a className="text-white ">
+              <LiaTelegram className="text-base mr-[1px]" />
+            </a>
+            <a className="text-white ">
+              <RiLinkedinFill className="text-base mr-[1px]" />
+            </a>
+          </div>
         </div>
       </section>
       {/* Secondary Hero */}
