@@ -9,6 +9,7 @@ import staking from "@/lotties/Staking.json";
 
 //images
 import treasury from "./../assets/images/home.svg";
+import HeroImage from "./../assets/images/HeroImage.png";
 import mob from "./../assets/images/mob.svg";
 import eth from "./../assets/images/Eth.svg";
 import community from "./../assets/images/malefemale.png";
@@ -28,45 +29,11 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center w-full bg-light-grey-bg">
       {/*hero*/}
-      <section className="w-full flex flex-col items-center justify-center main-bg bg-cover">
-        <div className="pb-28 pt-24 px-5 lg:px-8 flex flex-col lg:flex-row items-center max-w-[1440px] relative">
-          <div className="z-10 lg:order-1 max-w-[510px] lg:max-w-full min-h-[30vh] max-h-[380px] flex items-center justify-center">
-            <LottieContainer
-              lottie={{ animationData: heroImg }}
-              placeholder={hero_placeholder}
-              className="max-w-[90%]"
-              alt="Hero_placeholder"
-            />
-          </div>
-          <div className="flex flex-col items-center lg:items-start py-6 lg:flex-[0_0_50%]">
-            <h2 className="text-4xl md:text-5xl text-light-orange font-semibold">
-              ukiyo
-            </h2>
-            <h2 className="text-4xl md:text-5xl font-semibold pb-5">
-              Protocol
-            </h2>
-            <p className="text-center lg:text-left pb-3 text-sm text-[#F7F8FD]/80 font-light">
-              Venture Capital and Private Equity technology stack to kickstart
-              Blockchain and Real-World projects
-            </p>
-            <p className="text-center lg:text-left pb-8 text-sm text-[#F7F8FD]/80 font-light">
-              A community driven protocol powered by Ethereum
-            </p>
-            <div className="grid grid-cols-2 gap-4 w-full max-w-[345px]">
-              <a
-                href="https://www.dropbox.com/s/a7wal9nsw43zlb3/230324 ukiyo Whitepaper v1.pdf?dl=0"
-                className="transition shadow-inner shadow-white/40 text-xs md:text-[16px] bg-light-orange py-4 px-4 rounded-full w-full text-center hover:bg-transparent border-light-orange border-[1px] hover:text-light-orange"
-              >
-                Whitepaper
-              </a>
-              <a
-                href="https://github.com/ukiyo-protocol"
-                className="transition text-xs md:text-[16px] w-full py-4 shadow-inner shadow-white/40 text-white px-4 rounded-full text-center border-[1px] hover:bg-transparent hover:border-light-orange hover:text-light-orange"
-              >
-                Github
-              </a>
-            </div>
-          </div>
+      <section className="bg-grey-blue hero-gradient w-full flex flex-col items-center pt-[100px]">
+        <div className="max-w-[calc(75vw)] w-full relative py">
+          <Image src={HeroImage} alt="background" className="w-full" />
+          <h2 className="text-6xl absolute z-10">ukiyo Protocol</h2>
+          <p></p>
         </div>
       </section>
       {/* Secondary Hero */}
