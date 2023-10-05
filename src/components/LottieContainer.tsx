@@ -24,6 +24,8 @@ export default function LottieContainer(props: {
     setTimeout(() => setShouldFetch(true), 1500);
   }, [setShouldFetch]);
 
+  console.log({ data, animationData, lottiePath, shouldFetch });
+
   return (
     <div className={className}>
       {!!(placeholder && alt) && (
@@ -34,6 +36,8 @@ export default function LottieContainer(props: {
         />
       )}
       <Lottie loop play animationData={data?.lottie || animationData} />
+      {data?.lottie?.nm || "fuuuuuk"}
+      <button onClick={() => setShouldFetch((p) => !p)}>refetch</button>
     </div>
   );
 }
