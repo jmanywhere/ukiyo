@@ -1,8 +1,7 @@
 "use client";
 import Lottie from "react-lottie-player";
 import Image, { type StaticImageData } from "next/image";
-import { useState } from "react";
-import useSWR from "swr";
+import { useEffect, useState } from "react";
 
 export default function LottieContainer(props: {
   placeholder?: StaticImageData;
@@ -13,13 +12,10 @@ export default function LottieContainer(props: {
 }) {
   const { placeholder, lottiePath, alt, animationData, className } = props;
   const [animationLoaded, setAnimationLoaded] = useState(false);
-  const [shouldFetch, setShouldFetch] = useState(false);
 
-  const { data } = useSWR("/lotties/" + lottiePath + ".json", (url) =>
-    fetch(url).then((r) => r.json())
-  );
-
-  console.log({ data, animationData, lottiePath, shouldFetch });
+  useEffect(() => {
+    setTimeout(() => setAnimationLoaded(true), 1500);
+  }, [setAnimationLoaded]);
 
   return (
     <div className={className}>
@@ -27,12 +23,10 @@ export default function LottieContainer(props: {
         <Image
           src={placeholder}
           alt={alt}
-          className={data || animationData ? "hidden" : ""}
+          className={animationLoaded && animationData ? "hidden" : ""}
         />
       )}
-      <Lottie loop play animationData={data || animationData} />
-      {data?.nm || "fuuuuuk"}
-      {animationData?.nm || "2fuuuuuk"}
+      <Lottie loop play animationData={animationData} />
     </div>
   );
 }
