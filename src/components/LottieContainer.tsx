@@ -11,7 +11,6 @@ export default function LottieContainer(props: {
 }) {
   const { placeholder, lottie, alt, className } = props;
   const [animationLoaded, setAnimationLoaded] = useState(false);
-  console.log("LottieContainer", { lottie });
   return (
     <div className={className}>
       {!!(placeholder && alt) && (

@@ -3,7 +3,6 @@ import Image from "next/image";
 
 //lotties animation
 import LottieContainer from "@/components/LottieContainer";
-import heroImg from "@/lottieJs/hero";
 //images
 import treasury from "../../assets/images/home.svg";
 import mob from "../../assets/images/mob.svg";
@@ -16,7 +15,8 @@ import EcoCard from "@/components/EcoCard";
 import GobernanceCard from "@/components/GobernanceCard";
 import NewsCard from "@/components/NewsCard";
 
-export default function Home() {
+export default async function Home() {
+  const heroImg = await getHeroImage();
   return (
     <main className="min-h-screen flex flex-col items-center w-full bg-light-grey-bg">
       {/*hero*/}
@@ -303,4 +303,17 @@ export default function Home() {
       </section> */}
     </main>
   );
+}
+import path from "path";
+import { promises as fs } from "fs";
+async function getHeroImage() {
+  //Find the absolute path of the json directory
+  const jsonDirectory = path.join(process.cwd(), "lotties");
+  //Read the json data file data.json
+  const fileContents = await fs.readFile(
+    jsonDirectory + "/HeroImnageUkiyo.json",
+    "utf8"
+  );
+  //Return the content of the data file in json format
+  return JSON.parse(fileContents);
 }
