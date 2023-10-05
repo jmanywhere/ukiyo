@@ -26,7 +26,7 @@ export default function Home() {
   const tokenDeployed = 0; //ilustrative pourpuses
 
   return (
-    <main className="min-h-screen flex flex-col items-center w-full ">
+    <main className="min-h-screen flex flex-col items-center w-full bg-light-grey-bg">
       {/*hero*/}
       <section className="w-full flex flex-col items-center justify-center main-bg bg-cover">
         <div className="pb-28 pt-24 px-5 lg:px-8 flex flex-col lg:flex-row items-center max-w-[1440px] relative">
@@ -70,9 +70,9 @@ export default function Home() {
         </div>
       </section>
       {/* Secondary Hero */}
-      <section className="w-full py-16 lg:py-32 bg-light-grey relative overflow-hidden flex flex-col items-center px-2 md:px-28">
+      <section className="w-full py-16 lg:py-32  relative overflow-hidden flex flex-col items-center px-2 md:px-28">
         <div className="z-10">
-          <h2 className="text-2xl xs:text-3xl md:text-[56px] lg:text-7xl text-dark z-10 whitespace-pre-wrap w-full md:leading-[4rem] lg:leading-[5.5rem] pb-6 md:pb-9 lg:pb-14">
+          <h2 className="text-2xl xs:text-3xl md:text-[56px] lg:text-7xl text-dark-text z-10 whitespace-pre-wrap w-full md:leading-[4rem] lg:leading-[5.5rem] pb-6 md:pb-9 lg:pb-14">
             A new type of{"\n"}financial technology{"\n"}for capital formation
           </h2>
         </div>
@@ -84,20 +84,24 @@ export default function Home() {
             alt="Hero_placeholder"
           />
           <div className="z-10">
-            <h3 className="text-dark italic font-medium text-2xl max-w-xs pb-4">
+            <h3 className="text-dark-text italic font-medium text-2xl max-w-xs pb-4">
               We look, we see, and we can&apos;t build the things we dream of
             </h3>
-            <p className="text-dark font-normal max-w-xs">
+            <p className="text-dark-text font-normal max-w-xs">
               We&apos;re creating the infrastructure to democratize funding,
               making it open and permissionless to Eeveryone, Everywhere, All at
               Once
             </p>
           </div>
         </div>
-        <div className="rounded-full absolute w-[calc(95vw)] h-[calc(95vw)] -top-[calc(95vw/2)] left-[calc((100vw-95vw)/2)] border-2 border-slate-200/80" />
-        <div className="rounded-full absolute w-[calc(48vw)] h-[calc(48vw)] -top-[calc(48vw/2)] left-[calc((100vw-48vw)/2)] border-2 border-slate-200/80" />
+        <div className="rounded-full absolute w-[calc(95vw)] h-[calc(95vw)] -top-[calc(95vw/2)] left-[calc((100vw-95vw)/2)] border-2 border-slate-300/80" />
+        <div className="rounded-full absolute w-[calc(48vw)] h-[calc(48vw)] -top-[calc(48vw/2)] left-[calc((100vw-48vw)/2)] border-2 border-slate-300/80" />
         <div className="absolute w-[90vw] h-[15vw] striped-bg bottom-0 left-0 max-h-[80px] " />
       </section>
+
+      {/* How it works */}
+      <section className="w-full py-16 lg:py-32 bg-light-grey relative overflow-hidden flex flex-col items-center px-2 md:px-28"></section>
+
       {/*stats and features*/}
       {/* <section className="bg-white w-full px-5 pb-10 flex flex-col items-center">
         <div className="relative max-w-[1440px] w-full">
@@ -239,11 +243,11 @@ export default function Home() {
         </div>
       </section>
       {/*Etherium Logo*/}
-      <section className="bg-grey-blue w-full py-10 flex flex-col items-center border-t-[1px] border-light-grey">
+      {/* <section className="bg-grey-blue w-full py-10 flex flex-col items-center border-t-[1px] border-light-grey">
         <h3 className="text-3xl pb-5 font-medium">Powered By</h3>
         <Image src={eth} alt="img" />
         <h5 className="py-3">Raise Capital. Invest Capital.</h5>
-      </section>
+      </section> */}
     </main>
   );
 }
