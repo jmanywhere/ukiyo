@@ -10,6 +10,9 @@
   .footer-gradient {
     background: radial-gradient(circle at left center , #294e61 0,#0f2c3a 35%);
   }
+  .footer-gradient-sm {
+    background: radial-gradient(circle at left top , #294e61 0,#0f2c3a 55%);
+  }
   .main-bg {
     @apply bg-grey-blue bg-mainBg;
     
