@@ -32,6 +32,7 @@ export default function LottieContainer(props: {
       )}
       <Lottie loop play animationData={data || animationData} />
       {data?.nm || "fuuuuuk"}
+      {animationData?.nm || "2fuuuuuk"}
     </div>
   );
 }

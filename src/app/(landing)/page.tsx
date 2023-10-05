@@ -11,12 +11,11 @@ import community from "../../assets/images/malefemale.png";
 import hero_placeholder from "../../../public/hero_placeholder.gif";
 
 //components
-import FeatureCard from "@/components/FeatureCard";
 import EcoCard from "@/components/EcoCard";
 import GobernanceCard from "@/components/GobernanceCard";
 import NewsCard from "@/components/NewsCard";
 
-export default async function Home() {
+export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center w-full bg-light-grey-bg">
       {/*hero*/}
