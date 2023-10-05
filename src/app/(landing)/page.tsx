@@ -311,7 +311,7 @@ async function getHeroImage() {
   const jsonDirectory = path.join(process.cwd(), "lotties");
   //Read the json data file data.json
   const fileContents = await fs.readFile(
-    jsonDirectory + "/HeroImnageUkiyo.json",
+    jsonDirectory + "/HeroImageUkiyo.json",
     "utf8"
   );
   //Return the content of the data file in json format
