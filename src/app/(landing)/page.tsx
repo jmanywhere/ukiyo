@@ -3,7 +3,7 @@ import Image from "next/image";
 
 //lotties animation
 import LottieContainer from "@/components/LottieContainer";
-import heroLottie from "@/lotties/HeroImageUkiyo.json";
+import heroLottie from "@/../../public/lotties/HeroImageUkiyo.json";
 //images
 import treasury from "../../assets/images/home.svg";
 import mob from "../../assets/images/mob.svg";

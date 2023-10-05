@@ -1,7 +1,7 @@
 "use client";
 import Lottie from "react-lottie-player";
 import Image, { type StaticImageData } from "next/image";
-import { useState, useLayoutEffect } from "react";
+import { useState } from "react";
 import useSWR from "swr";
 
 export default function LottieContainer(props: {
@@ -15,14 +15,9 @@ export default function LottieContainer(props: {
   const [animationLoaded, setAnimationLoaded] = useState(false);
   const [shouldFetch, setShouldFetch] = useState(false);
 
-  const { data } = useSWR(
-    shouldFetch ? "api/?lottie=" + lottiePath : null,
-    (url) => fetch(url).then((r) => r.json())
+  const { data } = useSWR("api/?lottie=" + lottiePath, (url) =>
+    fetch(url).then((r) => r.json())
   );
-
-  useLayoutEffect(() => {
-    setTimeout(() => setShouldFetch(true), 1500);
-  }, [setShouldFetch]);
 
   console.log({ data, animationData, lottiePath, shouldFetch });
 
@@ -37,7 +32,6 @@ export default function LottieContainer(props: {
       )}
       <Lottie loop play animationData={data?.lottie || animationData} />
       {data?.lottie?.nm || "fuuuuuk"}
-      <button onClick={() => setShouldFetch((p) => !p)}>refetch</button>
     </div>
   );
 }
