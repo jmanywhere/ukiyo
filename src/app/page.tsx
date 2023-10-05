@@ -26,7 +26,7 @@ export default function Home() {
   const tokenDeployed = 0; //ilustrative pourpuses
 
   return (
-    <main className="min-h-screen flex flex-col items-center w-full bg-light-grey">
+    <main className="min-h-screen flex flex-col items-center w-full ">
       {/*hero*/}
       <section className="w-full flex flex-col items-center justify-center main-bg bg-cover">
         <div className="pb-28 pt-24 px-5 lg:px-8 flex flex-col lg:flex-row items-center max-w-[1440px] relative">
