@@ -15,7 +15,7 @@ export default function LottieContainer(props: {
   const [animationLoaded, setAnimationLoaded] = useState(false);
   const [shouldFetch, setShouldFetch] = useState(false);
 
-  const { data } = useSWR("api/?lottie=" + lottiePath, (url) =>
+  const { data } = useSWR("/lotties/" + lottiePath + ".json", (url) =>
     fetch(url).then((r) => r.json())
   );
 
@@ -27,11 +27,11 @@ export default function LottieContainer(props: {
         <Image
           src={placeholder}
           alt={alt}
-          className={data?.lottie || animationData ? "hidden" : ""}
+          className={data || animationData ? "hidden" : ""}
         />
       )}
-      <Lottie loop play animationData={data?.lottie || animationData} />
-      {data?.lottie?.nm || "fuuuuuk"}
+      <Lottie loop play animationData={data || animationData} />
+      {data?.nm || "fuuuuuk"}
     </div>
   );
 }
