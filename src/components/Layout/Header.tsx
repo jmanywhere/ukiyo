@@ -25,8 +25,10 @@ const Header = () => {
   return (
     <header
       className={classNames(
-        "pb-4 px-16  fixed top-0 left-0 right-0 z-50 flex justify-center items-center transition duration-300 ",
-        scrollPosition > 32 ? "bg-light-grey-bg pt-4 drop-shadow-xl" : "pt-8"
+        " px-16  fixed top-0 left-0 right-0 z-50 flex justify-center items-center transition duration-300 ",
+        scrollPosition > 32
+          ? "bg-light-grey-bg pt-2 pb-2 drop-shadow-xl"
+          : "pt-8 pb-4"
       )}
     >
       <div className="flex justify-between max-w-[1440px] w-full">
