@@ -15,6 +15,10 @@
   .nav-underline{
       @apply relative after:absolute after:h-[2px] after:bg-light-orange after:w-full after:bottom-0 after:left-0;
   }
+
+  .striped-bg{
+    background: repeating-linear-gradient(135deg, #102e3c1a, #102e3c1a 2px, transparent 0px, transparent 10px )
+  }
 }
 
 html {

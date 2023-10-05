@@ -7,7 +7,17 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'sm': '640px',
+      'md': '800px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     extend: {
+      screens:{
+        'xs': '375px',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -21,7 +31,11 @@ const config: Config = {
         'light-orange': '#EF7D7E',
         'pink-orange': '#F3668E',
         'text-orange': '#EB646A',
-        'light-grey' : '#9AA2A6'
+        'light-grey' : '#9AA2A6',
+        'dark': "#102E3C"
+      },
+      fontFamily:{
+        'poppins': ["var(--font-poppins)"],
       }
     },
   },
