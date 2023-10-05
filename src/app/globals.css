@@ -7,6 +7,9 @@
     @apply bg-grey-blue;
     background: radial-gradient(farthest-corner at 37px 82px,#355f70 0,#0d2a35 42%);
   }
+  .footer-gradient {
+    background: radial-gradient(circle at left center , #294e61 0,#0f2c3a 35%);
+  }
   .main-bg {
     @apply bg-grey-blue bg-mainBg;
     
