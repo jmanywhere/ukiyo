@@ -23,6 +23,7 @@ const config: Config = {
         'gradient-conic':
         'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'mainBg': "url('/mainBg.png')",
+        'electronic-paths': "url('/backgrounds/Electronic-Paths.png') bottom no-repeat",
       },
       colors:{
         'light-blue':'#42778C',
