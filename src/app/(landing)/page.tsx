@@ -3,6 +3,7 @@ import Image from "next/image";
 
 //lotties animation
 import LottieContainer from "@/components/LottieContainer";
+import heroLottie from "@/lotties/HeroImageUkiyo.json";
 //images
 import treasury from "../../assets/images/home.svg";
 import mob from "../../assets/images/mob.svg";
@@ -24,6 +25,7 @@ export default async function Home() {
           <div className="z-10 lg:order-1 max-w-[510px] lg:max-w-full min-h-[30vh] max-h-[380px] flex items-center justify-center">
             <LottieContainer
               lottiePath="HeroImageUkiyo"
+              animationData={heroLottie}
               placeholder={hero_placeholder}
               className="max-w-[90%]"
               alt="Hero_placeholder"
@@ -70,6 +72,7 @@ export default async function Home() {
         <div className="flex flex-col md:flex-row items-center">
           <LottieContainer
             lottiePath="HeroImageUkiyo"
+            animationData={heroLottie}
             placeholder={hero_placeholder}
             className="max-w-xs lg:max-w-xl z-10"
             alt="Hero_placeholder"
