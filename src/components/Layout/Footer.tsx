@@ -6,12 +6,12 @@ import { LiaTelegram } from "react-icons/lia";
 
 const Footer = () => {
   return (
-    <footer className="gradient-conic bg-grey-blue pt-16 pb-8 w-full flex flex-col items-center border-0">
+    <footer className="footer-gradient pt-16 pb-8 w-full flex flex-col items-center border-0">
       <div className="max-w-[1440px]  flex flex-col items-center w-full">
         <div className="w-full flex flex-col items-center xl:flex-row xl:justify-center xl:items-start xl:px-6">
           <div className="flex flex-col lg:flex-row items-center lg:justify-between  lg:items-start w-full pb-5 md:px-8   max-w-[1440px] ">
             <div className="mb-6 lg:mr-16">
-              <LogoSvg className="max-w-[88px] max-h-[90px] lg:max-w-[72px] lg:max-h-[72px] w-full h-full mb-3 text-white" />
+              <LogoSvg width={88} height={90} fill="white" />
               <SuscribeBtn />
             </div>
             {/*Links*/}

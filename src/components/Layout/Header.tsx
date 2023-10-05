@@ -31,10 +31,9 @@ const Header = () => {
     >
       <div className="flex justify-between max-w-[1440px] w-full">
         <LogoSvg
-          className={classNames(
-            "max-w-[45px] max-h-[46px] lg:max-w-[72px] lg:max-h-[72px] w-full h-full",
-            scrollPosition > 0 ? "text-light-orange" : "text-white"
-          )}
+          width={67}
+          height={68}
+          fill={scrollPosition > 0 ? "#EF7D7E" : "#fff"}
         />
         <MenuButton scroll={scrollPosition} />
         <nav className="hidden lg:flex items-center gap-x-5 px-5 py-2.5 rounded-full bg-light-orange">
