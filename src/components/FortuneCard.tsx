@@ -12,10 +12,10 @@ type cardProps = {
 const FortuneCard = (props: cardProps) => {
   const { title, text, img, placeholder, btnTxt, href } = props;
   return (
-    <div className="rounded-3xl border-slate-300/80 border-[1px] ">
+    <div className="rounded-3xl border-slate-300/80 border-[1px] overflow-hidden px-5 py-8">
       <Image src={img} alt="imgage" />
-      <h3>{title}</h3>
-      <p>{text}</p>
+      <h3 className="py-2 text-2xl">{title}</h3>
+      <p className="text-light-grey">{text}</p>
       <div className="join border-0 py-4">
         <input
           type="text"
