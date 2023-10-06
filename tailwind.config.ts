@@ -24,7 +24,9 @@ const config: Config = {
         'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'mainBg': "url('/mainBg.png')",
         'electronic-paths': "url('/backgrounds/Electronic-Paths.png') bottom no-repeat",
-        'hero-background': "url('/backgrounds/HeroImage.png')",
+        'floating-bg': "url('/backgrounds/Floating_bg.png')",
+        'floating-bg-desktop': "url('/backgrounds/Floating_bg_desktop.svg')",
+        'frotune-digital': "url('/backgrounds/fortuneDigital.svg')",
       },
       colors:{
         'light-blue':'#42778C',

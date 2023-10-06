@@ -6,18 +6,24 @@ import { useEffect, useState } from "react";
 //lotties animation
 import LottieContainer from "@/components/LottieContainer";
 import heroLottie from "@/../../public/lotties/HeroImageUkiyo.json";
+
 //images
 import treasury from "../../assets/images/home.svg";
 import mob from "../../assets/images/mob.svg";
 import community from "../../assets/images/malefemale.png";
 import hero_placeholder from "../../../public/hero_placeholder.gif";
-import heroImgMobile from "../../assets/images/HeroImgMobile.png";
-import heroImgDesktop from "../../assets/images/HeroImgDesktop.png";
+import heroImgMobile from "../../assets/images/HeroImgMobile.svg";
+import heroImgDesktop from "../../assets/images/HeroImgDesktop.svg";
+import ventures from "../../assets/images/venturesImg.svg";
+import studio from "../../assets/images/studiosImg.svg";
+import walletIcon from "../../assets/images/walletIcon.svg";
+import computerIcon from "../../assets/images/computerIcon.svg";
 
 //components
 import EcoCard from "@/components/EcoCard";
 import GobernanceCard from "@/components/GobernanceCard";
 import NewsCard from "@/components/NewsCard";
+import FortuneCard from "@/components/FortuneCard";
 
 //icons
 import { RiTwitterXLine, RiLinkedinFill } from "react-icons/ri";
@@ -43,28 +49,34 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center w-full bg-light-grey-bg">
       {/*hero*/}
-      <section className="bg-grey-blue hero-gradient w-full flex flex-col items-center justify-center pt-[100px]">
-        <div className="w-full max-w-[1440px] flex flex-col items-center">
-          <Image src={heroImg} alt="ukiyo protocol" className="pb-20  w-full" />
-          <div className="flex justify-between items center  w-full px-5 md:px-16 pb-8 gap-1">
-            <div className="flex items-center md:justify-start gap-1 sm:gap-5 md:gap-1 w-full">
-              <a className="rounded-full bg-white text-grey-blue btn normal-case font-medium text-base max-w-[calc(30vw)] md:max-w-[144px] w-full">
-                Github
-              </a>
-              <a className="rounded-full bg-light-orange btn text-white normal-case font-medium text-base max-w-[calc(30vw)] md:max-w-[144px] w-full">
-                Manifesto
-              </a>
-            </div>
-            <div className="flex justify-center items-center bg-white text-grey-blue rounded-full max-w-[calc(27vw)] w-full gap-3 md:max-w-[144px]">
-              <a>
-                <RiTwitterXLine className="text-base" />
-              </a>
-              <a>
-                <LiaTelegram className="text-base" />
-              </a>
-              <a>
-                <RiLinkedinFill className="text-base" />
-              </a>
+      <section className="bg-grey-blue hero-gradient w-full flex flex-col items-center justify-center pt-[85px]">
+        <div className="w-full max-w-[1440px] flex flex-col items-center px-2 md:px-5  lg:px-6 xl:px-7">
+          <div className="w-full flex flex-col items-center border-x-[1px] border-slate-300/80">
+            <Image
+              src={heroImg}
+              alt="ukiyo protocol"
+              className="pb-20  w-full"
+            />
+            <div className="flex justify-between items center  w-full px-5 md:px-16 pb-8 gap-1">
+              <div className="flex items-center md:justify-start gap-1 sm:gap-5 md:gap-1 w-full">
+                <a className="rounded-full bg-white text-grey-blue btn normal-case font-medium text-base max-w-[calc(27vw)] md:max-w-[144px] w-full">
+                  Github
+                </a>
+                <a className="rounded-full bg-light-orange btn text-white normal-case font-medium text-base max-w-[calc(27vw)] md:max-w-[144px] w-full">
+                  Manifesto
+                </a>
+              </div>
+              <div className="flex justify-center items-center bg-white text-grey-blue rounded-full max-w-[calc(27vw)] w-full gap-3 md:max-w-[144px]">
+                <a>
+                  <RiTwitterXLine className="text-base" />
+                </a>
+                <a>
+                  <LiaTelegram className="text-base" />
+                </a>
+                <a>
+                  <RiLinkedinFill className="text-base" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -99,7 +111,63 @@ export default function Home() {
         <div className="rounded-full absolute w-[calc(48vw)] h-[calc(48vw)] -top-[calc(48vw/2)] left-[calc((100vw-48vw)/2)] border-2 border-slate-300/80" />
         <div className="absolute w-[90vw] h-[15vw] striped-bg bottom-0 left-0 max-h-[80px] " />
       </section>
-
+      {/* Floating World */}
+      <section className="bg-floating-bg md:bg-floating-bg-desktop bg-no-repeat bg-cover px-2 md:px-5  lg:px-6 xl:px-7 w-full flex flex-col items-center">
+        <div className="border-x-[1px] border-slate-300/80 py-14 px-5 lg:flex lg:flex-col lg:items-center max-w-[1440px] w-full">
+          <div className="pb-10 w-full lg:pb-20">
+            <h2 className="text-[32px] md:text-[75px] lg:text-[100px]">
+              A floating world
+            </h2>
+            <p className="text-base font-normal">
+              ukiyo Protocol is designed to allow Ventures and Studios to work
+              alone or on top of other protocols
+            </p>
+          </div>
+          <div className="px-10 lg:flex lg:flex-col lg:items-center w-full lg:max-w-[900px] lg:pb-10">
+            <div className="pb-3 lg:flex lg:flex-col lg:items-center w-full lg:pb-10">
+              <div className="pb-5 lg:flex lg:justify-between lg:items-center w-full ">
+                <Image
+                  src={ventures}
+                  alt="ventures"
+                  className="pb-5 lg:order-1"
+                />
+                <h2 className="text-2xl pb-2 lg:order-0 lg:text-5xl">
+                  Ventures
+                </h2>
+                <p className="max-w-[375px] lg:order-2">
+                  Ever wanted to invest capital in far reaching places and don't
+                  know where to start? The protocol is onboarding the next one
+                  billion users around the world and turning them into a new
+                  generation of Venture Capitalists
+                </p>
+              </div>
+              <div className="pb-5 lg:flex lg:justify-between lg:items-center w-full ">
+                <Image
+                  src={studio}
+                  alt="ventures"
+                  className="pb-5 lg:order-1"
+                />
+                <h2 className="text-2xl pb-2 lg:order-0 lg:text-5xl">
+                  Studios
+                </h2>
+                <p className="max-w-[375px] lg:order-2">
+                  Hollywood, Gaming, and Music have always been a distant dream
+                  for most of us. Studios changes this. Produce the next
+                  generation of blockbuster hits and own the content you consume
+                </p>
+              </div>
+            </div>
+            <div className="border-[3px] border-light-orange rounded-3xl  flex flex-col lg:flex-row lg:justify-center items-center floating-assets-gradient py-5 w-full lg:py-14">
+              <h2 className="text-grey-blue text-2xl lg:text-[32px] pb-3 w-full text-center">
+                Total Assets Deployed:
+              </h2>
+              <p className="text-light-orange text-[40px] lg:text-5xl font-medium w-full text-center">
+                $000
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* How it works */}
       <section className="w-full overflow-hidden">
         <div className="px-[calc((100vw-95vw)/2)] z-10 relative">
@@ -158,114 +226,29 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* News */}
-      <section className="w-full px-4 md:px-8">
-        <div className="border-x-[1px]">stuff HERE</div>
-      </section>
-
-      {/*stats and features*/}
-      {/* <section className="bg-white w-full px-5 pb-10 flex flex-col items-center">
-        <div className="relative max-w-[1440px] w-full">
-          <div className="flex flex-col items-center md:items-start md:px-8 bg-white rounded-3xl drop-shadow-xl p-6 mb-5 -top-12 absolute w-full">
-            <h2 className="text-2xl text-black font-semibold">
-              Protocol Stats
-            </h2>
-            <div className="stats stats-vertical md:stats-horizontal bg-white/20 w-full">
-              <div className="stat place-items-center py-2">
-                <div className="stat-title mb-3 text-black">
-                  Total Value Locked
-                </div>
-                <div className="stat-value text-black">${lockedValue}</div>
-              </div>
-              <div className="stat place-items-center py-2">
-                <div className="stat-title mb-3 text-black">Token Price</div>
-                <div className="stat-value text-black">${tokenPrice}</div>
-              </div>
-
-              <div className="stat place-items-center py-2">
-                <div className="stat-title mb-3 text-black">
-                  Total Assets Deployed
-                </div>
-                <div className="stat-value text-black">${tokenDeployed}</div>
-              </div>
-            </div>
+      {/* Fortune */}
+      <section className="w-full px-2 md:px-5  lg:px-6 xl:px-7bg-grey-blue hero-gradient">
+        <div className="border-x-[1px] border-slate-300/80 bg-fortune-digital py-10 px-3">
+          <h2 className="text-[32px] pb-5">Fortune favors the bold</h2>
+          <div>
+            <FortuneCard
+              title="Are you an investor?"
+              text="We're seeking the brightest and boldest investors to join us"
+              img={walletIcon}
+              placeholder="Your Email"
+              btnTxt="Contact"
+              href=""
+            />
+            <FortuneCard
+              title="Are you a developer?"
+              text="Come and help us build the infrastructure for the new world"
+              img={computerIcon}
+              placeholder="Your Email"
+              btnTxt="Contact"
+              href=""
+            />
           </div>
         </div>
-        <h2 className="text-black pt-[380px] md:pt-[180px] lg:pt-[220px] font-semibold text-2xl md:text-3xl mb-8 md:mb-12">
-          Features
-        </h2>
-        <div className="grid grid-flow-col md:grid-flow-row grid-rows-2 md:grid-rows-1 md:grid-cols-2 md:gap-4 lg:gap-6 max-w-[1440px]">
-          <FeatureCard
-            title="Ventures"
-            text="Become a disruptive investor via web3 and access start-ups and mid-stage projects"
-            btnText="Learn"
-            lottie={ventures}
-          />
-          <FeatureCard
-            title="Staking"
-            text="Earn passive income from the Vault. Stake KXO. Govern the protocol"
-            btnText="Learn"
-            lottie={staking}
-          />
-        </div>
-      </section> */}
-      {/*ecosystem*/}
-      <section className="bg-grey-blue w-full flex flex-col items-center py-16 lg:py-20">
-        <h2 className="py-2 text-2xl md:text-3xl font-semibold mb-5 md:mb-8 lg:mb-12">
-          Ecosystem
-        </h2>
-        <div className="flex flex-col items-center md:items-stretch md:flex-row px-6 gap-3 md:gap-5 justify-center w-full max-w-[1440px]">
-          <EcoCard
-            title="Treasury"
-            text="The Reserve and Liquidity of the protocol.
-            Owned and controlled by the community"
-            image={treasury}
-            altText="treasury"
-          />
-          <EcoCard
-            title="Vault"
-            text="Learn about the Vault, its mechanics, and how you can earn KXO"
-            image={mob}
-            altText="mob"
-          />
-        </div>
-      </section>
-      {/*Governed by*/}
-      <section className="bg-light-grey text-black flex flex-col items-center py-20 px-5 w-full">
-        <h2 className="text-2xl md:text-3xl md:font-bold font-semibold text-center mb-5">
-          Governed by the Community
-        </h2>
-        <p className="text-sm md:text-[15.53px]font-medium text-center mb-6">
-          ukiyo is a protocol that is entirely decentralized and governed by its
-          community
-        </p>
-        <a className="btn rounded-full bg-light-orange text-white normal-case mb-8 border-0 md:mb-20">
-          Goberment Forum
-        </a>
-        <Image src={community} alt="community-img" className="mb-10 md:mb-20" />
-        <h3 className="text-2xl md:text-[25.23px]font-semibold md:font-bold text-center mb-10 md:mb-16">
-          How it works
-        </h3>
-        <GobernanceCard
-          cards={[
-            {
-              title: "Request for Comment Submission (RFC)",
-              text: "Submit proposals and comments and engage with the DAO community.",
-              aText: "Visit Docs",
-            },
-            {
-              title: "Create a Snapshot",
-              text: "Use a Snapshot vote to measure community opinion on a new proposal.",
-              aText: "Go to Snapshot",
-            },
-            {
-              title: "Submit a Request for Improvement (UIP) for ukiyo",
-              text: "The proposal(s) can now be submitted via a GitHub pull request, and the DAO community can vote on approvals.",
-              aText: "Visit Docs",
-            },
-          ]}
-        />
       </section>
       {/*News*/}
       <section className="bg-light-grey text-black flex flex-col items-center py-16 px-5 w-full">
@@ -304,12 +287,6 @@ export default function Home() {
           />
         </div>
       </section>
-      {/*Etherium Logo*/}
-      {/* <section className="bg-grey-blue w-full py-10 flex flex-col items-center border-t-[1px] border-light-grey">
-        <h3 className="text-3xl pb-5 font-medium">Powered By</h3>
-        <Image src={eth} alt="img" />
-        <h5 className="py-3">Raise Capital. Invest Capital.</h5>
-      </section> */}
     </main>
   );
 }
