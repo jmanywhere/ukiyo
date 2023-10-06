@@ -1,7 +1,5 @@
-"use client";
 //next
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 //lotties animation
 import LottieContainer from "@/components/LottieContainer";
@@ -24,35 +22,29 @@ import EcoCard from "@/components/EcoCard";
 import GobernanceCard from "@/components/GobernanceCard";
 import NewsCard from "@/components/NewsCard";
 import FortuneCard from "@/components/FortuneCard";
+import News from "./News";
 
 //icons
 import { RiTwitterXLine, RiLinkedinFill } from "react-icons/ri";
 import { LiaTelegram } from "react-icons/lia";
 
 export default function Home() {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkScreenSize = () => {
-      const windowWidth = window.innerWidth;
-      setIsMobile(windowWidth < 765);
-    };
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-    return () => {
-      window.removeEventListener("resize", checkScreenSize);
-    };
-  });
-
-  const heroImg = isMobile ? heroImgMobile : heroImgDesktop;
-
   return (
-    <main className="flex flex-col items-center w-full bg-light-grey-bg">
+    <main className="flex flex-col justify-center w-full bg-light-grey-bg">
       {/*hero*/}
-      <section className="bg-grey-blue hero-gradient flex-grow w-full md:h-screen px-2 md:px-5 lg:px-6 xl:px-7">
+      <section className="bg-grey-blue hero-gradient flex-grow flex flex-col items-center w-full md:h-screen px-2 md:px-5 lg:px-6 xl:px-7">
         <div className="w-full max-w-[1440px] border-x-[1px] border-slate-300/80">
           <div className="w-full flex flex-col items-center justify-between pt-[85px] md:h-screen">
-            <Image src={heroImg} alt="ukiyo protocol" className=" w-full" />
+            <Image
+              src={heroImgDesktop}
+              alt="ukiyo protocol"
+              className="hidden md:block w-full"
+            />
+            <Image
+              src={heroImgMobile}
+              alt="ukiyo protocol_mobile"
+              className=" w-full md:hidden"
+            />
             <div className="flex justify-between w-full px-5 md:px-16 pb-6 gap-1">
               <div className="flex flex-col md:flex-row items-center md:justify-start gap-4 sm:gap-5 md:gap-4 w-full">
                 <a className="rounded-full bg-white text-grey-blue btn normal-case font-medium text-base max-w-[calc(50vw)] md:max-w-[144px] w-full">
@@ -249,42 +241,7 @@ export default function Home() {
         </div>
       </section>
       {/*News*/}
-      <section className="bg-light-grey text-black flex flex-col items-center py-16 px-5 w-full">
-        <div className="flex flex-col w-full max-w-[1440px] lg:flex-row lg:px-6">
-          <div className="w-full max-w-[250px]">
-            <h2 className="text-2xl md:text-3xl md:font-bold font-semibold mb-5">
-              In The News
-            </h2>
-            <a className="btn rounded-full bg-light-orange text-white normal-case mb-8 border-0">
-              View all Articles
-            </a>
-          </div>
-          {/*aqui mandamos lo del cms*/}
-          <NewsCard
-            cards={[
-              {
-                title: "How to Become a Venture Capitalist with DeFi",
-                date: "Aug 18, 2023",
-                text: "Let's explore the stories of two accomplished venture capitalists, whom we'll refer to as Alex and Morgan in this blog and gain valuable ins...",
-                href: "link",
-              },
-              {
-                title:
-                  "From Centralization to Decentralization, the Future of Venture Capital and Private Equity Funds: Making Fund Ownership Accessible to Everyone",
-                date: "May 17, 2023",
-                text: "However, with the rise of decentralized finance (DeFi), fund ownership is becoming more accessible to everyone. In this we explore how DeFi ...",
-                href: "link",
-              },
-              {
-                title: "ukiyo Protocol, The Journey So Far",
-                date: "Apr 29, 2023",
-                text: "Developing a DeFi fund that merges venture capital and private equity is no easy feat. It requires extensive research, expertise, and highly...",
-                href: "link",
-              },
-            ]}
-          />
-        </div>
-      </section>
+      <News />
     </main>
   );
 }
