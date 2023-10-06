@@ -25,14 +25,15 @@ const Header = () => {
   return (
     <header
       className={classNames(
-        "fixed top-0 left-0 right-0 z-50 px-2 md:px-5  lg:px-6 xl:px-7",
-        hasScrolled ? "bg-light-grey-bg" : ""
+        "fixed top-0 left-0 right-0 z-50 px-2 md:px-5  lg:px-6 xl:px-7 transition duration-300",
+        hasScrolled ? "bg-light-grey-bg shadow-xl" : ""
       )}
     >
       <div
         className={classNames(
-          "px-5 md:px-16  flex justify-center items-center transition duration-300 border-x-[1px] border-slate-300/80",
-          hasScrolled ? "bg-light-grey-bg py-2 shadow-xl" : "py-2 md:pt-8"
+          "px-5 md:px-16  flex justify-center items-center transition-all duration-300",
+          "py-2",
+          hasScrolled ? "" : "md:pt-8"
         )}
       >
         <div className="flex justify-between max-w-[1440px] w-full">
