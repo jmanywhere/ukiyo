@@ -33,7 +33,7 @@ const Header = () => {
         className={classNames(
           "px-5 md:px-16  flex justify-center items-center transition-all duration-300",
           "py-2",
-          hasScrolled ? "" : "md:pt-8"
+          hasScrolled ? "" : "md:pt-6"
         )}
       >
         <div className="flex justify-between max-w-[1440px] w-full">
