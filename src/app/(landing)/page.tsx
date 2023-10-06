@@ -47,35 +47,33 @@ export default function Home() {
   const heroImg = isMobile ? heroImgMobile : heroImgDesktop;
 
   return (
-    <main className="min-h-screen flex flex-col items-center w-full bg-light-grey-bg">
+    <main className="flex flex-col items-center w-full bg-light-grey-bg">
       {/*hero*/}
-      <section className="bg-grey-blue hero-gradient w-full flex flex-col items-center justify-center pt-[85px]">
-        <div className="w-full max-w-[1440px] flex flex-col items-center px-2 md:px-5  lg:px-6 xl:px-7">
-          <div className="w-full flex flex-col items-center border-x-[1px] border-slate-300/80">
-            <Image
-              src={heroImg}
-              alt="ukiyo protocol"
-              className="pb-20  w-full"
-            />
-            <div className="flex justify-between items center  w-full px-5 md:px-16 pb-8 gap-1">
-              <div className="flex items-center md:justify-start gap-1 sm:gap-5 md:gap-1 w-full">
-                <a className="rounded-full bg-white text-grey-blue btn normal-case font-medium text-base max-w-[calc(27vw)] md:max-w-[144px] w-full">
+      <section className="bg-grey-blue hero-gradient flex-grow w-full md:h-screen px-2 md:px-5 lg:px-6 xl:px-7">
+        <div className="w-full max-w-[1440px] border-x-[1px] border-slate-300/80">
+          <div className="w-full flex flex-col items-center justify-between pt-[85px] md:h-screen">
+            <Image src={heroImg} alt="ukiyo protocol" className=" w-full" />
+            <div className="flex justify-between w-full px-5 md:px-16 pb-6 gap-1">
+              <div className="flex flex-col md:flex-row items-center md:justify-start gap-4 sm:gap-5 md:gap-4 w-full">
+                <a className="rounded-full bg-white text-grey-blue btn normal-case font-medium text-base max-w-[calc(50vw)] md:max-w-[144px] w-full">
                   Github
                 </a>
-                <a className="rounded-full bg-light-orange btn text-white normal-case font-medium text-base max-w-[calc(27vw)] md:max-w-[144px] w-full">
+                <a className="rounded-full bg-light-orange btn text-white normal-case font-medium text-base max-w-[calc(50vw)] md:max-w-[144px] w-full">
                   Manifesto
                 </a>
-              </div>
-              <div className="flex justify-center items-center bg-white text-grey-blue rounded-full max-w-[calc(27vw)] w-full gap-3 md:max-w-[144px]">
-                <a>
-                  <RiTwitterXLine className="text-base" />
-                </a>
-                <a>
-                  <LiaTelegram className="text-base" />
-                </a>
-                <a>
-                  <RiLinkedinFill className="text-base" />
-                </a>
+                <div className="md:self-stretch md:w-full md:flex md:justify-end">
+                  <div className="flex justify-evenly items-center bg-white text-grey-blue rounded-full w-screen max-w-[50vw] gap-3 md:max-w-[144px] px-4 py-4 h-full">
+                    <a>
+                      <RiTwitterXLine className="text-base" />
+                    </a>
+                    <a>
+                      <LiaTelegram className="text-base" />
+                    </a>
+                    <a>
+                      <RiLinkedinFill className="text-base" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
