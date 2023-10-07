@@ -38,7 +38,7 @@ export default function Home() {
             <Image
               src={heroImgDesktop}
               alt="ukiyo protocol"
-              className="hidden md:block w-full"
+              className="hidden md:block w-full max-w-5xl"
             />
             <Image
               src={heroImgMobile}

@@ -14,7 +14,10 @@
     background: radial-gradient(circle at left top , #294e61 0,#0f2c3a 55%);
   }
   .hero-gradient{
-    background: radial-gradient(circle at right top , #294e61 0,#0f2c3a 55%);
+    background: radial-gradient(circle at right top , #294e61 0,#0f2c3a 50%);
+    @media (min-width:1024px) {
+      background: radial-gradient(circle at center top , #294e61 0,#0f2c3a 50%);
+    }
   }
   .main-bg {
     @apply bg-grey-blue bg-mainBg;
