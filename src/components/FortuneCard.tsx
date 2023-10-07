@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 
 type cardProps = {
   title: string;
