@@ -125,10 +125,10 @@ export default function Home() {
                   Ventures
                 </h2>
                 <p className="max-w-[375px] lg:order-2">
-                  Ever wanted to invest capital in far reaching places and don't
-                  know where to start? The protocol is onboarding the next one
-                  billion users around the world and turning them into a new
-                  generation of Venture Capitalists
+                  Ever wanted to invest capital in far reaching places and
+                  don&apos;t know where to start? The protocol is onboarding the
+                  next one billion users around the world and turning them into
+                  a new generation of Venture Capitalists
                 </p>
               </div>
               <div className="pb-5 lg:flex lg:justify-between lg:items-center w-full ">
