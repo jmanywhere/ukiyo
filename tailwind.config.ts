@@ -37,7 +37,8 @@ const config: Config = {
         'text-orange': '#EB646A',
         'light-grey' : '#9AA2A6',
         'light-grey-bg': "#EFEAE4",
-        'dark-text': "#102E3C"
+        'dark-text': "#102E3C",
+        'almost-white': "#F9F8F5E5",
       },
       fontFamily:{
         'poppins': ["var(--font-poppins)"],
