@@ -139,7 +139,7 @@ export default function Home() {
                 <Image
                   src={ventures}
                   alt="ventures"
-                  className="pb-5 lg:pb-0 lg:order-1 lg:place-self-center lg:w-[150px]"
+                  className="pb-5 lg:pb-0 lg:order-1 lg:place-self-center lg:w-[125px]"
                 />
                 <h2 className="text-2xl pb-2 lg:pb-0 lg:order-0 lg:text-5xl lg:place-self-center">
                   Ventures
@@ -155,7 +155,7 @@ export default function Home() {
                 <Image
                   src={studio}
                   alt="ventures"
-                  className="pb-5 lg:pb-0 lg:order-1 lg:place-self-center lg:w-[150px]"
+                  className="pb-5 lg:pb-0 lg:order-1 lg:place-self-center lg:w-[125px]"
                 />
                 <h2 className="text-2xl pb-2 lg:pb-0 lg:order-0 lg:text-5xl lg:place-self-center">
                   Studios
