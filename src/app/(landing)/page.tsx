@@ -131,33 +131,33 @@ export default function Home() {
             </p>
           </div>
           <div className="px-10 lg:flex lg:flex-col lg:items-center w-full lg:max-w-[1000px] lg:pb-10">
-            <div className="pb-3 lg:grid lg:grid-rows-2 lg:items-center w-full lg:pb-10">
-              <div className="pb-5 lg:grid lg:grid-cols-3 w-full ">
+            <div className="pb-3 lg:grid lg:grid-rows-2 lg:items-center w-full lg:pb-10 lg:gap-10">
+              <div className="pb-5 lg:pb-0 lg:grid lg:grid-cols-3 w-full ">
                 <Image
                   src={ventures}
                   alt="ventures"
-                  className="pb-5 lg:order-1 lg:place-self-center lg:w-[150px]"
+                  className="pb-5 lg:pb-0 lg:order-1 lg:place-self-center lg:w-[150px]"
                 />
-                <h2 className="text-2xl pb-2 lg:order-0 lg:text-5xl lg:place-self-center">
+                <h2 className="text-2xl pb-2 lg:pb-0 lg:order-0 lg:text-5xl lg:place-self-center">
                   Ventures
                 </h2>
-                <p className="max-w-[375px] lg:order-2 lg:place-self-center">
+                <p className="max-w-[375px] lg:pb-0 lg:order-2 lg:place-self-center">
                   Ever wanted to invest capital in far reaching places and
                   don&apos;t know where to start? The protocol is onboarding the
                   next one billion users around the world and turning them into
                   a new generation of Venture Capitalists
                 </p>
               </div>
-              <div className="pb-5 lg:grid lg:grid-cols-3 w-full ">
+              <div className="pb-5  lg:pb-0 lg:grid lg:grid-cols-3 w-full ">
                 <Image
                   src={studio}
                   alt="ventures"
-                  className="pb-5 lg:order-1 lg:place-self-center lg:w-[150px]"
+                  className="pb-5 lg:pb-0 lg:order-1 lg:place-self-center lg:w-[150px]"
                 />
-                <h2 className="text-2xl pb-2 lg:order-0 lg:text-5xl lg:place-self-center">
+                <h2 className="text-2xl pb-2 lg:pb-0 lg:order-0 lg:text-5xl lg:place-self-center">
                   Studios
                 </h2>
-                <p className="max-w-[375px] lg:order-2 lg:place-self-center">
+                <p className="max-w-[375px] lg:pb-0 lg:order-2 lg:place-self-center">
                   Hollywood, Gaming, and Music have always been a distant dream
                   for most of us. Studios changes this. Produce the next
                   generation of blockbuster hits and own the content you consume
