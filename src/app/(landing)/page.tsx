@@ -47,7 +47,12 @@ export default function Home() {
             />
             <div className="flex justify-between w-full px-5 md:px-16 pb-6 gap-1 md:absolute bottom-0">
               <div className="flex flex-col md:flex-row items-center md:justify-start gap-4 sm:gap-5 md:gap-4 w-full">
-                <a className="rounded-full bg-white text-grey-blue btn normal-case font-medium text-base max-w-[calc(50vw)] md:max-w-[144px] w-full">
+                <a
+                  className="rounded-full bg-white text-grey-blue btn normal-case font-medium text-base max-w-[calc(50vw)] md:max-w-[144px] w-full"
+                  href="https://github.com/ukiyo-protocol"
+                  target="_blank"
+                  rel="noopener"
+                >
                   Github
                 </a>
                 <a className="rounded-full bg-light-orange btn text-white normal-case font-medium text-base max-w-[calc(50vw)] md:max-w-[144px] w-full">
@@ -55,13 +60,25 @@ export default function Home() {
                 </a>
                 <div className="md:self-stretch md:w-full md:flex md:justify-end">
                   <div className="flex justify-evenly items-center bg-white text-grey-blue rounded-full w-screen max-w-[50vw] gap-3 md:max-w-[144px] px-4 py-4 h-full">
-                    <a>
+                    <a
+                      href="https://twitter.com/ukiyo_labs"
+                      target="_blank"
+                      rel="noopener"
+                    >
                       <RiTwitterXLine className="text-base" />
                     </a>
-                    <a>
+                    <a
+                      href="https://t.me/ukiyo_protocol"
+                      target="_blank"
+                      rel="noopener"
+                    >
                       <LiaTelegram className="text-base" />
                     </a>
-                    <a>
+                    <a
+                      href="https://www.linkedin.com/company/ukiyo-labs-eth/"
+                      target="_blank"
+                      rel="noopener"
+                    >
                       <RiLinkedinFill className="text-base" />
                     </a>
                   </div>
