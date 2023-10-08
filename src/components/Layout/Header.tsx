@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Link from "next/link";
 import LogoSvg from "../componentSVGs/LogoSvg";
 
 import React, { useState, useEffect } from "react";
@@ -36,7 +36,7 @@ const Header = () => {
           hasScrolled ? "" : "md:pt-6"
         )}
       >
-        <div className="flex justify-between max-w-[1440px] w-full">
+        <div className="flex justify-between max-w-[1440px] w-full 2xl:px-16">
           <LogoSvg
             width={67}
             height={68}
@@ -44,17 +44,33 @@ const Header = () => {
           />
           <MenuButton scroll={hasScrolled} />
           <div className="hidden lg:flex items-center">
-            <nav className="hidden lg:flex items-center gap-x-[3px] px-5 py-2 rounded-full bg-light-orange">
-              <a className="text-light-orange bg-white rounded-full px-4 py-0.5">
+            <nav className="hidden lg:flex items-center gap-x-[3px] px-1 py-1 rounded-full bg-light-orange">
+              <Link
+                href="/"
+                className="text-light-orange bg-white rounded-full px-4 py-2"
+              >
                 Home
-              </a>
-              <a className="hover:text-light-orange  hover:bg-white hover:rounded-full px-4 py-0.5">
+              </Link>
+              <a
+                className="hover:text-light-orange  hover:bg-white hover:rounded-full px-4 py-2"
+                href="/#features"
+              >
                 Features
               </a>
-              <a className="hover:text-light-orange  hover:bg-white hover:rounded-full px-4 py-0.5">
+              <a
+                className="hover:text-light-orange  hover:bg-white hover:rounded-full px-4 py-2"
+                href="https://docs.ukiyo.network/ukiyo/"
+                target="_blank"
+                rel="noopener"
+              >
                 Docs
               </a>
-              <a className="hover:text-light-orange  hover:bg-white hover:rounded-full px-4 py-0.5">
+              <a
+                className="hover:text-light-orange  hover:bg-white hover:rounded-full px-4 py-2"
+                href="https://docs.ukiyo.network/ukiyo/faqs/general"
+                target="_blank"
+                rel="noopener"
+              >
                 FAQ
               </a>
             </nav>
