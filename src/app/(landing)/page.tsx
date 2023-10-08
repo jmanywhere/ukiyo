@@ -114,12 +114,12 @@ export default function Home() {
             </p>
           </div>
           <div className="px-10 lg:flex lg:flex-col lg:items-center w-full lg:max-w-[900px] lg:pb-10">
-            <div className="pb-3 lg:flex lg:flex-col lg:items-center w-full lg:pb-10">
-              <div className="pb-5 lg:flex lg:justify-between lg:items-center w-full ">
+            <div className="pb-3 lg:grid lg:grid-rows-2 lg:items-center w-full lg:pb-10">
+              <div className="pb-5 lg:grid lg:grid-cols-3 w-full ">
                 <Image
                   src={ventures}
                   alt="ventures"
-                  className="pb-5 lg:order-1"
+                  className="pb-5 lg:order-1 lg:place-self-center"
                 />
                 <h2 className="text-2xl pb-2 lg:order-0 lg:text-5xl">
                   Ventures
@@ -131,11 +131,11 @@ export default function Home() {
                   a new generation of Venture Capitalists
                 </p>
               </div>
-              <div className="pb-5 lg:flex lg:justify-between lg:items-center w-full ">
+              <div className="pb-5 lg:grid lg:grid-cols-3 w-full ">
                 <Image
                   src={studio}
                   alt="ventures"
-                  className="pb-5 lg:order-1"
+                  className="pb-5 lg:order-1 lg:place-self-center"
                 />
                 <h2 className="text-2xl pb-2 lg:order-0 lg:text-5xl">
                   Studios
