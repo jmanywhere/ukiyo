@@ -59,8 +59,9 @@ export default function Home() {
                   Manifesto
                 </a>
                 <div className="md:self-stretch md:w-full md:flex md:justify-end">
-                  <div className="flex justify-evenly items-center bg-white text-grey-blue rounded-full w-screen max-w-[50vw] gap-3 md:max-w-[144px] px-4 py-4 h-full">
+                  <div className="flex justify-evenly items-center bg-white text-grey-blue rounded-full w-screen max-w-[50vw] md:max-w-[144px]  px-4 h-full">
                     <a
+                      className="hover:bg-slate-400/40 rounded-full p-4"
                       href="https://twitter.com/ukiyo_labs"
                       target="_blank"
                       rel="noopener"
@@ -68,6 +69,7 @@ export default function Home() {
                       <RiTwitterXLine className="text-base" />
                     </a>
                     <a
+                      className="hover:bg-slate-400/40 rounded-full p-4"
                       href="https://t.me/ukiyo_protocol"
                       target="_blank"
                       rel="noopener"
@@ -75,6 +77,7 @@ export default function Home() {
                       <LiaTelegram className="text-base" />
                     </a>
                     <a
+                      className="hover:bg-slate-400/40 rounded-full p-4"
                       href="https://www.linkedin.com/company/ukiyo-labs-eth/"
                       target="_blank"
                       rel="noopener"
