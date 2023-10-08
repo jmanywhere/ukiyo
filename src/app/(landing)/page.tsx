@@ -34,7 +34,7 @@ export default function Home() {
       {/*hero*/}
       <section className="bg-grey-blue hero-gradient flex-grow flex flex-col items-center w-full md:h-screen px-2 md:px-5 lg:px-6 xl:px-7">
         <div className="w-full max-w-[1440px] border-x-[1px] border-slate-300/80">
-          <div className="w-full flex flex-col items-center justify-between pt-[85px] md:h-screen">
+          <div className="w-full flex flex-col items-center justify-between pt-[85px] pb-10 md:h-screen  md:relative">
             <Image
               src={heroImgDesktop}
               alt="ukiyo protocol"
@@ -45,7 +45,7 @@ export default function Home() {
               alt="ukiyo protocol_mobile"
               className=" w-full md:hidden"
             />
-            <div className="flex justify-between w-full px-5 md:px-16 pb-6 gap-1">
+            <div className="flex justify-between w-full px-5 md:px-16 pb-6 gap-1 md:absolute bottom-0">
               <div className="flex flex-col md:flex-row items-center md:justify-start gap-4 sm:gap-5 md:gap-4 w-full">
                 <a className="rounded-full bg-white text-grey-blue btn normal-case font-medium text-base max-w-[calc(50vw)] md:max-w-[144px] w-full">
                   Github
@@ -218,9 +218,11 @@ export default function Home() {
       </section>
       {/* Fortune */}
       <section className="w-full px-2 md:px-5  lg:px-6 xl:px-7bg-grey-blue hero-gradient">
-        <div className="border-x-[1px] border-slate-300/80 bg-fortune-digital py-10 px-3">
-          <h2 className="text-[32px] pb-5">Fortune favors the bold</h2>
-          <div>
+        <div className="border-x-[1px] border-slate-300/80 bg-fortune-digital py-10 px-3 md:px-10">
+          <h2 className="text-[32px] md:text-[100px] pb-5 max-w-[800px]">
+            Fortune favors the bold
+          </h2>
+          <div className="flex flex-col items-center  gap-6 md:flex-row md:justify-center">
             <FortuneCard
               title="Are you an investor?"
               text="We're seeking the brightest and boldest investors to join us"
