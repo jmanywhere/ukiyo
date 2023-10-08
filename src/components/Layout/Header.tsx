@@ -44,7 +44,7 @@ const Header = () => {
           />
           <MenuButton scroll={hasScrolled} />
           <div className="hidden lg:flex items-center">
-            <nav className="hidden lg:flex items-center gap-x-2 px-5 py-2 rounded-full bg-light-orange">
+            <nav className="hidden lg:flex items-center gap-x-[3px] px-5 py-2 rounded-full bg-light-orange">
               <a className="text-light-orange bg-white rounded-full px-4 py-0.5">
                 Home
               </a>
