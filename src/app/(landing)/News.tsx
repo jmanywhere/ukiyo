@@ -17,8 +17,8 @@ const News = async () => {
       <h3 className="pl-4 md:pl-0 text-2xl xs:text-3xl md:text-[56px] lg:text-7xl text-dark-text z-10 whitespace-pre-wrap md:leading-[4rem] lg:leading-[5.5rem] pb-1 w-full">
         In the news
       </h3>
-      <div className="flex flex-col md:flex-row gap-7 justify-between">
-        <div className="px-10 flex flex-col gap-4 pb-12 md:pb-32 pt-5 md:pt-8 lg:pt-12">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-7 justify-between">
+        <div className="px-10 flex flex-col gap-4 pb-0 md:pb-32 pt-5 md:pt-8 lg:pt-12">
           <NewsCard
             title={recentNews[0].blogTitle}
             slug={recentNews[0].blogSlug.current}
@@ -45,7 +45,7 @@ const News = async () => {
           />
         </div>
         <div className="flex-grow w-[1px] bg-dark-text/20 hidden md:flex" />
-        <div className="px-10 flex flex-col gap-4 pb-12 md:pb-32 pt-5 md:pt-8 lg:pt-12">
+        <div className="px-10 flex flex-col gap-4 pb-12 md:pb-32 pt-0 md:pt-8 lg:pt-12">
           <NewsCard
             title={recentNews[3].blogTitle}
             slug={recentNews[3].blogSlug.current}
