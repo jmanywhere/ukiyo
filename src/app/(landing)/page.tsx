@@ -122,7 +122,10 @@ export default function Home() {
         <div className="absolute w-[90vw] h-[15vw] striped-bg bottom-0 left-0 max-h-[80px] " />
       </section>
       {/* Floating World */}
-      <section className="bg-floating-bg md:bg-floating-bg-desktop bg-no-repeat bg-cover px-2 md:px-5  lg:px-6 xl:px-7 w-full flex flex-col items-center">
+      <section
+        className="bg-floating-bg md:bg-floating-bg-desktop bg-no-repeat bg-cover px-2 md:px-5  lg:px-6 xl:px-7 w-full flex flex-col items-center"
+        id="features"
+      >
         <div className="border-x-[1px] border-slate-300/80 py-14 px-5 lg:flex lg:flex-col lg:items-center max-w-[1440px] w-full">
           <div className="pb-10 w-full lg:pb-20">
             <h2 className="text-[32px] md:text-[75px] lg:text-[100px]">
