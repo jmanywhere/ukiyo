@@ -43,14 +43,14 @@ const Header = () => {
           <Image
             src={logoblanc}
             className={classNames(
-              "w-[80px] md:w-[120px]",
+              "w-[80px] md:w-[120px] lg:w-[150px]",
               hasScrolled ? "hidden" : ""
             )}
           />
           <Image
             src={logored}
             className={classNames(
-              "w-[80px] md:w-[120px]",
+              "w-[80px] md:w-[120px] lg:w-[150px]",
               hasScrolled ? "" : "hidden"
             )}
           />
