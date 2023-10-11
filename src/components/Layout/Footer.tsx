@@ -46,18 +46,27 @@ const Footer = () => {
         <div className="border-t-white/10 border-t-[1px] w-full flex justify-center ">
           <div className="max-w-[1440px] w-full flex flex-col lg:flex-row items-center justify-between py-5">
             {/*Copyright*/}
-            <p className="text-xs font-normal lg:px-10">
+            <p className="text-xs font-normal lg:px-10 text-white">
               Copyright © 2023 ukiyo Protocol. All rights reserved.
             </p>
             {/*Socials*/}
-            <div className="flex justify-center items-center gap-5 rounded-full w-full lg:max-w-[250px] pt-2 pb-5 lg:items-start lg:py-0 lg:px-10">
-              <a className="text-white">
+            <div className="flex justify-center items-center gap-2 rounded-full w-full lg:max-w-[250px] pt-2 pb-5 lg:items-start lg:py-0 lg:px-10">
+              <a
+                className="text-white hover:bg-white hover:text-dark-blue rounded-full p-2"
+                href="https://twitter.com/ukiyo_labs"
+              >
                 <RiTwitterXLine className="text-base" />
               </a>
-              <a className="text-white ">
+              <a
+                className="text-white hover:bg-white hover:text-dark-blue rounded-full p-2 "
+                href="https://t.me/ukiyo_protocol"
+              >
                 <LiaTelegram className="text-base mr-[1px]" />
               </a>
-              <a className="text-white ">
+              <a
+                className="text-white hover:bg-white hover:text-dark-blue rounded-full p-2 "
+                href="https://www.linkedin.com/company/ukiyo-labs-eth/"
+              >
                 <RiLinkedinFill className="text-base mr-[1px]" />
               </a>
             </div>

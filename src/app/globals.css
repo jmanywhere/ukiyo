@@ -40,4 +40,8 @@ html {
   color-scheme: dark;
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
+  ::selection {
+    background-color: #EF7D7E !important;
+    color: white !important;
+  }
 }

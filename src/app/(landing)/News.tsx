@@ -1,6 +1,7 @@
 import { groq } from "next-sanity";
 import { client } from "../../../sanity/lib/client";
 import { PortableTextBlock } from "sanity";
+import Image from "next/image";
 
 const News = async () => {
   const recentNews =
@@ -13,11 +14,11 @@ const News = async () => {
     }[0...5]`);
 
   return (
-    <section className="w-full pt-16 lg:pt-32 flex flex-col items-center  relative overflow-hidden px-2 md:px-24 xl:px-28">
-      <h3 className="pl-4 md:pl-0 text-2xl xs:text-3xl md:text-[56px] lg:text-7xl text-dark-text z-10 whitespace-pre-wrap md:leading-[4rem] lg:leading-[5.5rem] pb-1 w-full">
+    <section className="w-full pt-8 lg:pt-16 flex flex-col items-center  relative overflow-hidden px-2 md:px-24 xl:px-28">
+      <h3 className="pl-4 md:pl-0 text-3xl md:text-[56px] lg:text-8xl text-dark-text z-10 whitespace-pre-wrap md:leading-[4rem] lg:leading-[5.5rem] pb-1 w-full">
         In the news
       </h3>
-      <div className="flex flex-col md:flex-row gap-4 md:gap-7 justify-between">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-7 justify-between z-10">
         <div className="px-10 flex flex-col gap-4 pb-0 md:pb-32 pt-5 md:pt-8 lg:pt-12">
           <NewsCard
             title={recentNews[0].blogTitle}
@@ -75,6 +76,15 @@ const News = async () => {
             />
           )}
         </div>
+      </div>
+      <div className="absolute top-0 left-0 w-[100vw] px-[calc((100vw-90vw)/2)]">
+        <Image
+          src="/backgrounds/Electronic_Paths.png"
+          alt="electronics"
+          width={1478}
+          height={584}
+          className="w-[100vw] h-auto z-0 pointer-events-none rotate-180"
+        />
       </div>
     </section>
   );

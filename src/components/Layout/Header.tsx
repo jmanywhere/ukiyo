@@ -1,6 +1,10 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import LogoSvg from "../componentSVGs/LogoSvg";
+
+import logoblanc from "../../assets/images/Logo-Blanc.svg";
+import logored from "../../assets/images/Logo-red.svg";
 
 import React, { useState, useEffect } from "react";
 
@@ -32,19 +36,27 @@ const Header = () => {
       <div
         className={classNames(
           "px-5 md:px-16  flex justify-center items-center transition-all duration-300",
-          "py-2",
-          hasScrolled ? "" : "md:pt-6"
+          hasScrolled ? "py-2" : "py-2 md:pt-6"
         )}
       >
         <div className="flex justify-between max-w-[1440px] w-full 2xl:px-16">
-          <LogoSvg
-            width={67}
-            height={68}
-            fill={hasScrolled ? "#EF7D7E" : "#fff"}
+          <Image
+            src={logoblanc}
+            className={classNames(
+              "w-[80px] md:w-[120px]",
+              hasScrolled ? "hidden" : ""
+            )}
+          />
+          <Image
+            src={logored}
+            className={classNames(
+              "w-[80px] md:w-[120px]",
+              hasScrolled ? "" : "hidden"
+            )}
           />
           <MenuButton scroll={hasScrolled} />
           <div className="hidden lg:flex items-center">
-            <nav className="hidden lg:flex items-center gap-x-[3px] px-1 py-1 rounded-full bg-light-orange">
+            <nav className="hidden lg:flex items-center gap-x-[3px] px-2 py-2 rounded-full bg-light-orange">
               <Link
                 href="/"
                 className="text-light-orange bg-white rounded-full px-4 py-2"

@@ -14,7 +14,7 @@ const MenuButton = (props: menuProps) => {
   const [open, setOpen] = useState(false);
   const { scroll } = props;
   return (
-    <div className="drawer lg:hidden">
+    <div className="drawer lg:hidden text-white">
       <input
         id="my-drawer"
         type="checkbox"
@@ -49,11 +49,13 @@ const MenuButton = (props: menuProps) => {
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer" className="drawer-overlay"></label>
-        <nav className="menu  p-4 w-80 min-h-full bg-white text-dark-blue">
+        <nav className="menu  p-4 xs:w-[calc(70vw)] sm:w-60 min-h-full bg-white text-dark-blue">
           {/* Sidebar content here */}
-          <div className="flex items-center">
-            <LogoSvg width={85} height={86} fill="#EB646A" />
-            <h2 className="text-dark-blue text-2xl font-semibold">ukiyo</h2>
+          <div className="flex items-center pb-5">
+            <LogoSvg width={85} height={86} fill="#0F2C3A" />
+            <h2 className="text-dark-blue text-2xl font-semibold ml-3">
+              ukiyo
+            </h2>
           </div>
           <ul>
             <li>
