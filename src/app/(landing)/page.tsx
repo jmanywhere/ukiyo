@@ -112,7 +112,8 @@ export default function Home() {
           />
           <div className="z-10">
             <h3 className="text-dark-text italic font-medium text-2xl max-w-sm pb-4">
-              We look, we see, and we can&apos;t build the things we dream of
+              Imagine being able to build or be a part of something you could
+              only dream of
             </h3>
             <p className="text-dark-text font-normal max-w-xs">
               We&apos;re creating the infrastructure to democratize funding,
@@ -178,8 +179,8 @@ export default function Home() {
               <h2 className="text-grey-blue text-xl md:text-2xl lg:text-[32px] pb-3 w-full text-center">
                 Total Assets Deployed
               </h2>
-              <p className="text-light-orange text-3xl  md:text-[40px] lg:text-5xl font-medium w-full text-center break-words">
-                ${assetsDeployed.toLocaleString()}
+              <p className="text-grey-blue text-3xl  md:text-[40px] lg:text-5xl font-medium w-full text-center break-words">
+                $0,000,000{/*assetsDeployed.toLocaleString()*/}
               </p>
             </div>
           </div>
@@ -202,7 +203,8 @@ export default function Home() {
                     A Global Repository of Financial and Legal Contracts
                   </h4>
                   <p className="font-normal text-dark-text">
-                    Fully composable, permisionless, and dynamic
+                    Fully composable, permissionless, and dynamic legal
+                    frameworks
                   </p>
                 </div>
                 <div className="bg-white rounded-2xl border-4 border-light-grey/50 drop-shadow-2xl md:px-10 px-6 md:pt-8 md:pb-12 py-6 max-w-[370px] min-h-[261px] lg:mt-20">
@@ -213,8 +215,8 @@ export default function Home() {
                     Identity and Reputation
                   </h4>
                   <p className="font-normal text-dark-text">
-                    IPFS encrypted ERC-1238 granting access to verified data on
-                    individuals
+                    Verified proof of innocence and unique personhood enabling
+                    you to operate freely and privately
                   </p>
                 </div>
                 <div className="bg-white rounded-2xl border-4 border-light-grey/50 drop-shadow-2xl md:px-10 px-6 md:pt-8 md:pb-12 py-6 max-w-[370px] min-h-[261px]">
@@ -225,8 +227,8 @@ export default function Home() {
                     Execute Contracts and Stay Compliant
                   </h4>
                   <p className="font-normal text-dark-text">
-                    Stay on top of regulations, compliance, and tax obligations
-                    without the need to move a finger
+                    Preserve privacy and hit all regulatory makes without
+                    requiring the know-how of all the legal stuff
                   </p>
                 </div>
               </div>

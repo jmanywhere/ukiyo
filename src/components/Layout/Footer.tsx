@@ -80,7 +80,7 @@ const Footer = () => {
               </a>
               <a
                 className="text-white hover:bg-white hover:text-dark-blue rounded-full p-2 "
-                href="https://www.linkedin.com/company/ukiyo-labs-eth/"
+                href="https://www.linkedin.com/company/ukiyo-protocol/"
               >
                 <RiLinkedinFill className="text-base mr-[1px]" />
               </a>
