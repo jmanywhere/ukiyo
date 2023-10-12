@@ -81,7 +81,7 @@ export default function Home() {
                       </a>
                       <a
                         className="hover:bg-slate-400/40 rounded-full p-4"
-                        href="https://www.linkedin.com/company/ukiyo-labs-eth/"
+                        href="https://www.linkedin.com/company/ukiyo-protocol/"
                         target="_blank"
                         rel="noopener"
                       >
@@ -96,10 +96,10 @@ export default function Home() {
         </div>
       </section>
       {/* Secondary Hero */}
-      <section className="w-full py-16 lg:py-32  relative overflow-hidden flex flex-col items-center px-2 md:px-24 xl:px-28">
-        <div className="z-10">
-          <h2 className="text-2xl xs:text-3xl md:text-[56px] lg:text-7xl text-dark-text z-10 whitespace-pre-wrap md:leading-[4rem] lg:leading-[5.5rem] pb-6 md:pb-9 lg:pb-14">
-            A new type of{"\n"}financial technology{"\n"}for capital formation
+      <section className=" py-16 lg:py-32  relative overflow-hidden flex flex-col items-center px-2 md:px-24 xl:px-28">
+        <div className="z-10 max-w-[1440px] w-screen px-2 md:px-5  lg:px-6 xl:px-7">
+          <h2 className="text-2xl xs:text-3xl md:text-[56px] lg:text-7xl text-dark-text z-10 whitespace-pre-wrap md:leading-[4rem] lg:leading-[5.5rem] pb-6 md:pb-9 lg:pb-14 px-5">
+            A new type of financial technology for capital formation
           </h2>
         </div>
         <div className="flex flex-col md:flex-row items-center">
