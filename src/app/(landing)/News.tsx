@@ -20,41 +20,49 @@ const News = async () => {
       </h3>
       <div className="flex flex-col md:flex-row gap-4 md:gap-7 justify-between z-10">
         <div className="px-10 flex flex-col gap-4 pb-0 md:pb-32 pt-5 md:pt-8 lg:pt-12">
-          <NewsCard
-            title={recentNews[0].blogTitle}
-            slug={recentNews[0].blogSlug.current}
-            intro={recentNews[0].intro}
-            date={recentNews[0].publishDate}
-            url={recentNews[0].url}
-            acId="recent-news"
-          />
-          <NewsCard
-            title={recentNews[1].blogTitle}
-            slug={recentNews[1].blogSlug.current}
-            intro={recentNews[1].intro}
-            date={recentNews[1].publishDate}
-            url={recentNews[1].url}
-            acId="recent-news"
-          />
-          <NewsCard
-            title={recentNews[2].blogTitle}
-            slug={recentNews[2].blogSlug.current}
-            intro={recentNews[2].intro}
-            date={recentNews[2].publishDate}
-            url={recentNews[2].url}
-            acId="recent-news"
-          />
+          {recentNews?.[0] && (
+            <NewsCard
+              title={recentNews[0].blogTitle}
+              slug={recentNews[0].blogSlug.current}
+              intro={recentNews[0].intro}
+              date={recentNews[0].publishDate}
+              url={recentNews[0].url}
+              acId="recent-news"
+            />
+          )}
+          {recentNews[1] && (
+            <NewsCard
+              title={recentNews[1].blogTitle}
+              slug={recentNews[1].blogSlug.current}
+              intro={recentNews[1].intro}
+              date={recentNews[1].publishDate}
+              url={recentNews[1].url}
+              acId="recent-news"
+            />
+          )}
+          {recentNews[2] && (
+            <NewsCard
+              title={recentNews[2].blogTitle}
+              slug={recentNews[2].blogSlug.current}
+              intro={recentNews[2].intro}
+              date={recentNews[2].publishDate}
+              url={recentNews[2].url}
+              acId="recent-news"
+            />
+          )}
         </div>
         <div className="flex-grow w-[1px] bg-dark-text/20 hidden md:flex" />
         <div className="px-10 flex flex-col gap-4 pb-12 md:pb-32 pt-0 md:pt-8 lg:pt-12">
-          <NewsCard
-            title={recentNews[3].blogTitle}
-            slug={recentNews[3].blogSlug.current}
-            intro={recentNews[3].intro}
-            date={recentNews[3].publishDate}
-            url={recentNews[3].url}
-            acId="recent-news"
-          />
+          {recentNews[3] && (
+            <NewsCard
+              title={recentNews[3].blogTitle}
+              slug={recentNews[3].blogSlug.current}
+              intro={recentNews[3].intro}
+              date={recentNews[3].publishDate}
+              url={recentNews[3].url}
+              acId="recent-news"
+            />
+          )}
           {recentNews[4] && (
             <NewsCard
               title={recentNews[4].blogTitle}
