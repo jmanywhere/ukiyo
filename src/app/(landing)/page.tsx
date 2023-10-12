@@ -31,7 +31,7 @@ import { LiaTelegram } from "react-icons/lia";
 export default function Home() {
   const assetsDeployed = 1234567;
   return (
-    <main className="flex flex-col justify-center w-full bg-light-grey-bg">
+    <main className="flex flex-col justify-center bg-light-grey-bg ">
       {/*hero*/}
       <section className="bg-grey-blue hero-gradient flex-grow flex flex-col items-center w-full md:h-screen px-2 md:px-5 lg:px-6 xl:px-7">
         <div className="w-full max-w-[1440px] border-x-[1px] border-slate-300/80">
@@ -254,13 +254,13 @@ export default function Home() {
               title="Are you an investor?"
               text="We're seeking the brightest and boldest investors to join us"
               img={walletIcon}
-              emailHref=""
+              emailHref="mailto:hello@ukiyo.network"
             />
             <FortuneCard
               title="Are you a developer?"
               text="Come and help us build the infrastructure for the new world"
               img={computerIcon}
-              emailHref=""
+              emailHref="mailto:hello@ukiyo.network"
             />
           </div>
           <div className="absolute bottom-0 left-0 w-[100vw] px-[calc((100vw-90vw)/2)] z-0 ">
