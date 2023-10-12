@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 import classNames from "classnames";
 import Image from "next/image";
@@ -19,7 +20,8 @@ const MenuButton = (props: menuProps) => {
         id="my-drawer"
         type="checkbox"
         className="drawer-toggle"
-        onClick={() => setOpen((p) => !p)}
+        checked={open}
+        onChange={() => setOpen((p) => !p)}
       />
       <div className="drawer-content flex justify-end  items-center">
         {/* Page content here */}
@@ -59,16 +61,38 @@ const MenuButton = (props: menuProps) => {
           </div>
           <ul>
             <li>
-              <a className="text-light-orange">Home</a>
+              <Link
+                className="text-light-orange"
+                onClick={() => setOpen((p) => !p)}
+                href="/"
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <a>Features</a>
+              <a onClick={() => setOpen((p) => !p)} href="/#features">
+                Features
+              </a>
             </li>
             <li>
-              <a>Docs</a>
+              <a
+                onClick={() => setOpen((p) => !p)}
+                href="https://docs.ukiyo.network/ukiyo/"
+                target="_blank"
+                rel="noopener"
+              >
+                Docs
+              </a>
             </li>
             <li>
-              <a>FAQ</a>
+              <a
+                onClick={() => setOpen((p) => !p)}
+                href="https://docs.ukiyo.network/ukiyo/faqs/general"
+                target="_blank"
+                rel="noopener"
+              >
+                FAQ
+              </a>
             </li>
           </ul>
         </nav>
