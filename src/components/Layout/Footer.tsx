@@ -13,8 +13,8 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row items-center lg:justify-between px-3  lg:items-start w-full pb-5 md:px-8   max-w-[1440px] ">
             <div className="mb-6 lg:mr-16 flex flex-col items-center">
               <LogoSvg width={88} height={90} fill="white" />
-              {/* <SuscribeBtn /> */}
-              <div className="flex items-center gap-4 pt-2">
+              <SuscribeBtn />
+              {/* <div className="flex items-center gap-4 pt-2">
                 <a
                   className="btn border-none rounded-full font-bold text-lg bg-light-orange text-white hover:bg-light-grey-bg hover:text-secondary"
                   href={"mailto:hello@ukiyo.network"}
@@ -27,7 +27,7 @@ const Footer = () => {
                 >
                   <LiaTelegram className="text-xl mr-[1px]" />
                 </a>
-              </div>
+              </div> */}
             </div>
             {/*Links*/}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 place-content-evenly w-full px-6 max-w-[375px] md:max-w-full">

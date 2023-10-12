@@ -15,74 +15,76 @@ const News = async () => {
 
   return (
     <section className="w-full pt-8 lg:pt-16 flex flex-col items-center  relative overflow-hidden px-2 md:px-24 xl:px-28">
-      <h3 className="pl-4 md:pl-0 text-3xl md:text-[56px] lg:text-8xl text-dark-text z-10 whitespace-pre-wrap md:leading-[4rem] lg:leading-[5.5rem] pb-1 w-full">
-        In the news
-      </h3>
-      <div className="flex flex-col md:flex-row gap-4 md:gap-7 justify-between z-10">
-        <div className="px-10 flex flex-col gap-4 pb-0 md:pb-32 pt-5 md:pt-8 lg:pt-12">
-          {recentNews?.[0] && (
-            <NewsCard
-              title={recentNews[0].blogTitle}
-              slug={recentNews[0].blogSlug.current}
-              intro={recentNews[0].intro}
-              date={recentNews[0].publishDate}
-              url={recentNews[0].url}
-              acId="recent-news"
-            />
-          )}
-          {recentNews[1] && (
-            <NewsCard
-              title={recentNews[1].blogTitle}
-              slug={recentNews[1].blogSlug.current}
-              intro={recentNews[1].intro}
-              date={recentNews[1].publishDate}
-              url={recentNews[1].url}
-              acId="recent-news"
-            />
-          )}
-          {recentNews[2] && (
-            <NewsCard
-              title={recentNews[2].blogTitle}
-              slug={recentNews[2].blogSlug.current}
-              intro={recentNews[2].intro}
-              date={recentNews[2].publishDate}
-              url={recentNews[2].url}
-              acId="recent-news"
-            />
-          )}
-        </div>
-        <div className="flex-grow w-[1px] bg-dark-text/20 hidden md:flex" />
-        <div className="px-10 flex flex-col gap-4 pb-12 md:pb-32 pt-0 md:pt-8 lg:pt-12">
-          {recentNews[3] && (
-            <NewsCard
-              title={recentNews[3].blogTitle}
-              slug={recentNews[3].blogSlug.current}
-              intro={recentNews[3].intro}
-              date={recentNews[3].publishDate}
-              url={recentNews[3].url}
-              acId="recent-news"
-            />
-          )}
-          {recentNews[4] && (
-            <NewsCard
-              title={recentNews[4].blogTitle}
-              slug={recentNews[4].blogSlug.current}
-              intro={recentNews[4].intro}
-              date={recentNews[4].publishDate}
-              url={recentNews[4].url}
-              acId="recent-news"
-            />
-          )}
-          {recentNews[5] && (
-            <NewsCard
-              title={recentNews[5].blogTitle}
-              slug={recentNews[5].blogSlug.current}
-              intro={recentNews[5].intro}
-              date={recentNews[5].publishDate}
-              url={recentNews[5].url}
-              acId="recent-news"
-            />
-          )}
+      <div className="max-w-[1440px] w-full z-10 px-3 md:px-10">
+        <h3 className="pl-4 md:pl-0 text-3xl md:text-[56px] lg:text-8xl text-dark-text z-10 whitespace-pre-wrap md:leading-[4rem] lg:leading-[5.5rem] pb-1 w-full">
+          In the news
+        </h3>
+        <div className="flex flex-col md:flex-row gap-4 md:gap-7 justify-between z-10">
+          <div className="px-10 flex flex-col gap-4 pb-0 md:pb-32 pt-5 md:pt-8 lg:pt-12">
+            {recentNews?.[0] && (
+              <NewsCard
+                title={recentNews[0].blogTitle}
+                slug={recentNews[0].blogSlug.current}
+                intro={recentNews[0].intro}
+                date={recentNews[0].publishDate}
+                url={recentNews[0].url}
+                acId="recent-news"
+              />
+            )}
+            {recentNews[1] && (
+              <NewsCard
+                title={recentNews[1].blogTitle}
+                slug={recentNews[1].blogSlug.current}
+                intro={recentNews[1].intro}
+                date={recentNews[1].publishDate}
+                url={recentNews[1].url}
+                acId="recent-news"
+              />
+            )}
+            {recentNews[2] && (
+              <NewsCard
+                title={recentNews[2].blogTitle}
+                slug={recentNews[2].blogSlug.current}
+                intro={recentNews[2].intro}
+                date={recentNews[2].publishDate}
+                url={recentNews[2].url}
+                acId="recent-news"
+              />
+            )}
+          </div>
+          <div className="flex-grow w-[1px] max-w-[1px] bg-dark-text/20 hidden md:flex" />
+          <div className="px-10 flex flex-col gap-4 pb-12 md:pb-32 pt-0 md:pt-8 lg:pt-12">
+            {recentNews[3] && (
+              <NewsCard
+                title={recentNews[3].blogTitle}
+                slug={recentNews[3].blogSlug.current}
+                intro={recentNews[3].intro}
+                date={recentNews[3].publishDate}
+                url={recentNews[3].url}
+                acId="recent-news"
+              />
+            )}
+            {recentNews[4] && (
+              <NewsCard
+                title={recentNews[4].blogTitle}
+                slug={recentNews[4].blogSlug.current}
+                intro={recentNews[4].intro}
+                date={recentNews[4].publishDate}
+                url={recentNews[4].url}
+                acId="recent-news"
+              />
+            )}
+            {recentNews[5] && (
+              <NewsCard
+                title={recentNews[5].blogTitle}
+                slug={recentNews[5].blogSlug.current}
+                intro={recentNews[5].intro}
+                date={recentNews[5].publishDate}
+                url={recentNews[5].url}
+                acId="recent-news"
+              />
+            )}
+          </div>
         </div>
       </div>
       <div className="absolute top-0 left-0 w-[100vw] px-[calc((100vw-90vw)/2)]">

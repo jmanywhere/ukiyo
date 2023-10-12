@@ -9,7 +9,10 @@ const SuscribeBtn = () => {
         placeholder="Subscribe to our Newsletter"
       />
       <div className="join-item rounded-r-full bg-transparent  border-white/20 p-2 border-l-0 border-[1px]">
-        <a className="btn rounded-full font-bold text-lg bg-light-orange border-[1px] text-white ">
+        <a
+          className="btn rounded-full font-bold text-lg bg-light-orange border-[1px] text-white "
+          href="mailto:hello@ukiyo.network"
+        >
           <IoIosArrowForward />
         </a>
       </div>

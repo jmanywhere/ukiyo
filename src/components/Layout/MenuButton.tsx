@@ -52,17 +52,14 @@ const MenuButton = (props: menuProps) => {
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer" className="drawer-overlay"></label>
-        <nav className="menu  p-4 xs:w-[calc(70vw)] sm:w-60 min-h-full bg-white text-dark-blue">
+        <nav className="menu  p-4 xs:w-[135px] sm:w-60 min-h-full bg-white text-dark-blue">
           {/* Sidebar content here */}
-          <div className="flex items-center pb-5">
+          <div className="flex items-center flex-col pb-5">
             <Image
               src={logored}
               className="w-[85px] "
               alt="gradient ukiyo logo"
             />
-            <h2 className="text-dark-blue text-2xl font-semibold ml-3">
-              ukiyo
-            </h2>
           </div>
           <ul>
             <li>

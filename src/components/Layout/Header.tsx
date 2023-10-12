@@ -48,7 +48,7 @@ const Header = () => {
             alt="gradient ukiyo logo"
           />
           <MenuButton scroll={hasScrolled} />
-          <div className="hidden lg:flex items-center">
+          <div className="hidden lg:flex items-center text-white">
             <nav className="hidden lg:flex items-center gap-x-[3px] px-2 py-2 rounded-full bg-light-orange">
               <Link
                 href="/"

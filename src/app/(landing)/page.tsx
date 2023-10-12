@@ -132,7 +132,7 @@ export default function Home() {
       >
         <div className="border-x-[1px] border-slate-300/80 py-14 px-5 lg:flex lg:flex-col lg:items-center max-w-[1440px] w-full">
           <div className="pb-10 w-full lg:pb-20">
-            <h2 className="text-2xl xs:text-3xl md:text-[56px] lg:text-7xl text-white z-10 whitespace-pre-wrap md:leading-[4rem] lg:leading-[5.5rem] pb-6 ">
+            <h2 className="text-2xl xs:text-3xl md:text-[56px] lg:text-7xl text-white z-10 whitespace-pre-wrap md:leading-[4rem] lg:leading-[5.5rem] pb-6">
               A floating world
             </h2>
             <p className="text-base text-white font-normal">
@@ -186,11 +186,11 @@ export default function Home() {
         </div>
       </section>
       {/* How it works */}
-      <section className="w-full overflow-hidden">
-        <div className="px-2 md:px-5  lg:px-6 xl:px-7 z-10 relative">
-          <div className="xs:border-x-2 border-dark-text/10 py-16 lg:py-32 flex flex-col items-center justify-center">
-            <div className="container z-10">
-              <h3 className="text-4xl md:text-[56px] lg:text-7xl font-normal w-full text-dark-text lg:pb-16 pb-12 pl-4 lg:pl-14">
+      <section className="w-full overflow-hidden flex flex-col items-center relative px-2 md:px-5  lg:px-6 xl:px-7">
+        <div className="border-x-[1px] border-dark-text/50 px-5 lg:flex lg:flex-col lg:items-center max-w-[1440px] w-full">
+          <div className="py-16 lg:py-32 flex flex-col items-center justify-center">
+            <div className="w-full md:container z-10">
+              <h3 className="text-4xl md:text-[56px] lg:text-7xl font-normal w-full text-dark-text lg:pb-16 pb-12 pl-4 ">
                 How it works
               </h3>
               <div className="flex lg:flex-row flex-col lg:items-start items-center justify-center gap-6 px-4">
@@ -231,21 +231,21 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="absolute bottom-0 left-0 w-[100vw] px-[calc((100vw-90vw)/2)]">
-              <Image
-                src="/backgrounds/Electronic_Paths.png"
-                alt="electronics"
-                width={1478}
-                height={584}
-                className="w-[100vw] h-auto z-0 pointer-events-none"
-              />
-            </div>
+          </div>
+          <div className="absolute bottom-0 left-0 w-[100vw] px-[calc((100vw-90vw)/2)]">
+            <Image
+              src="/backgrounds/Electronic_Paths.png"
+              alt="electronics"
+              width={1478}
+              height={584}
+              className="w-[100vw] h-auto z-0 pointer-events-none"
+            />
           </div>
         </div>
       </section>
       {/* Fortune */}
-      <section className="w-full px-2 md:px-5  lg:px-6 xl:px-7 bg-grey-blue hero-gradient">
-        <div className="border-x-[1px] border-slate-300/80 bg-fortune-digital py-10 px-3 md:px-10 relative z-10 overflow-hidden">
+      <section className="w-full px-2 md:px-5  lg:px-6 xl:px-7 bg-grey-blue hero-gradient flex flex-col items-center relative overflow-hidden">
+        <div className="border-x-[1px] border-slate-300/80 bg-fortune-digital py-10 px-3 md:px-10 relative z-10 overflow-hidden max-w-[1440px] w-full">
           <h2 className="text-2xl xs:text-3xl md:text-[56px] lg:text-7xl text-white  max-w-[600px] z-10 whitespace-pre-wrap md:leading-[4rem] lg:leading-[5.5rem] pb-6 md:pb-9 lg:pb-14">
             Fortune favors the bold
           </h2>
@@ -263,15 +263,15 @@ export default function Home() {
               emailHref="mailto:hello@ukiyo.network"
             />
           </div>
-          <div className="absolute bottom-0 left-0 w-[100vw] px-[calc((100vw-90vw)/2)] z-0 ">
-            <Image
-              src="/backgrounds/fortuneDigital.png"
-              alt="electronics"
-              width={1478}
-              height={584}
-              className="w-[100vw] h-auto z-0 pointer-events-none"
-            />
-          </div>
+        </div>
+        <div className="absolute bottom-0 left-0 w-[100vw] px-[calc((100vw-90vw)/2)] z-0 ">
+          <Image
+            src="/backgrounds/fortuneDigital.png"
+            alt="electronics"
+            width={1478}
+            height={584}
+            className="w-[100vw] h-auto z-0 pointer-events-none"
+          />
         </div>
       </section>
       {/*News*/}
