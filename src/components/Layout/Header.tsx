@@ -46,6 +46,7 @@ const Header = () => {
               "w-[80px] md:w-[120px] lg:w-[150px]",
               hasScrolled ? "hidden" : ""
             )}
+            alt="white ukiyo logo"
           />
           <Image
             src={logored}
@@ -53,6 +54,7 @@ const Header = () => {
               "w-[80px] md:w-[120px] lg:w-[150px]",
               hasScrolled ? "" : "hidden"
             )}
+            alt="gradient ukiyo logo"
           />
           <MenuButton scroll={hasScrolled} />
           <div className="hidden lg:flex items-center">
