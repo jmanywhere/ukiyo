@@ -37,11 +37,14 @@ const Footer = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 place-content-evenly w-full px-6 max-w-[375px] md:max-w-full">
               <div className="flex flex-col gap-4 text-light-grey">
                 <h2 className="pb-2 text-white font-medium">Quick Links</h2>
-                <Link className="text-sm pb-2" href="/">
+                <Link
+                  className="text-sm pb-2 text-white/80 hover:text-white"
+                  href="/"
+                >
                   Home
                 </Link>
                 <a
-                  className="text-sm pb-2"
+                  className="text-sm pb-2 text-white/80 hover:text-white"
                   href="https://docs.ukiyo.network/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -49,7 +52,7 @@ const Footer = () => {
                   Blog
                 </a>
                 <a
-                  className="text-sm pb-2"
+                  className="text-sm pb-2 text-white/80 hover:text-white"
                   href="https://docs.ukiyo.network/ukiyo/faqs/general"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -60,7 +63,7 @@ const Footer = () => {
               <div className="flex flex-col gap-4 text-light-grey">
                 <h2 className="pb-2 text-white font-medium">Learn</h2>
                 <a
-                  className="text-sm pb-2"
+                  className="text-sm pb-2 text-white/80 hover:text-white"
                   href="https://docs.ukiyo.network/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -68,7 +71,7 @@ const Footer = () => {
                   Documentation
                 </a>
                 <a
-                  className="text-sm pb-2"
+                  className="text-sm pb-2 text-white/80 hover:text-white"
                   href="https://www.dropbox.com/s/a7wal9nsw43zlb3/230324%20ukiyo%20Whitepaper%20v1.pdf?dl=0"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -76,7 +79,7 @@ const Footer = () => {
                   Manifesto
                 </a>
                 <a
-                  className="text-sm pb-2"
+                  className="text-sm pb-2 text-white/80 hover:text-white"
                   href="https://docs.ukiyo.network/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -87,7 +90,7 @@ const Footer = () => {
               <div className="flex flex-col gap-4 text-light-grey">
                 <h2 className="pb-2 text-white font-medium">Ecosystem</h2>
                 <a
-                  className="text-sm pb-2"
+                  className="text-sm pb-2 text-white/80 hover:text-white"
                   href="https://docs.ukiyo.network/ukiyo/overview/ukiyo-ventures"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -95,7 +98,7 @@ const Footer = () => {
                   Ventures
                 </a>
                 <a
-                  className="text-sm pb-2"
+                  className="text-sm pb-2 text-white/80 hover:text-white"
                   target="_blank"
                   href="https://docs.ukiyo.network/ukiyo/overview/ukiyo-studios"
                   rel="noopener noreferrer"
@@ -107,7 +110,7 @@ const Footer = () => {
               <div className="flex flex-col gap-4 text-light-grey">
                 <h2 className="pb-2 text-white font-medium">Contact Us</h2>
                 <a
-                  className="text-sm pb-2"
+                  className="text-sm pb-2 text-white/80 hover:text-white"
                   href="mailto:hello@ukiyo.network"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -115,7 +118,7 @@ const Footer = () => {
                   Contact
                 </a>
                 <a
-                  className="text-sm pb-2"
+                  className="text-sm pb-2 text-white/80 hover:text-white"
                   href="https://docs.ukiyo.network/ukiyo/literature-and-content/media"
                   target="_blank"
                   rel="noopener noreferrer"
