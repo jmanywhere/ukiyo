@@ -12,7 +12,7 @@ type cardProps = {
 const FortuneCard = (props: cardProps) => {
   const { title, text, img, emailHref } = props;
   return (
-    <div className="rounded-3xl border-slate-300/80 border-[1px] overflow-hidden px-5 py-8 text-white">
+    <div className="rounded-3xl border-slate-300/80 border-[1px] overflow-hidden px-5 py-8 text-white max-w-sm">
       <Image src={img} alt="image" />
       <h3 className="pt-6 pb-3 text-2xl text-white">{title}</h3>
       <p className="text-light-grey pb-8">{text}</p>
