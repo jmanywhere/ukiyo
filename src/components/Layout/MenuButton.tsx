@@ -6,6 +6,7 @@ import Image from "next/image";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import LogoRed from "../../assets/images/Logo-red.svg";
 import LogoSvg from "../componentSVGs/LogoSvg";
+import logored from "../../assets/images/LogoGradient.svg";
 
 type menuProps = {
   scroll: boolean;
@@ -54,7 +55,11 @@ const MenuButton = (props: menuProps) => {
         <nav className="menu  p-4 xs:w-[calc(70vw)] sm:w-60 min-h-full bg-white text-dark-blue">
           {/* Sidebar content here */}
           <div className="flex items-center pb-5">
-            <LogoSvg width={85} height={86} fill="#0F2C3A" />
+            <Image
+              src={logored}
+              className="w-[85px] "
+              alt="gradient ukiyo logo"
+            />
             <h2 className="text-dark-blue text-2xl font-semibold ml-3">
               ukiyo
             </h2>

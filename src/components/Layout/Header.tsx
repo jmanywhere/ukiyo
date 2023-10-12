@@ -3,8 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import LogoSvg from "../componentSVGs/LogoSvg";
 
-import logoblanc from "../../assets/images/Logo-Blanc.svg";
-import logored from "../../assets/images/Logo-red.svg";
+import logored from "../../assets/images/LogoGradient.svg";
 
 import React, { useState, useEffect } from "react";
 
@@ -40,20 +39,12 @@ const Header = () => {
         )}
       >
         <div className="flex justify-between max-w-[1440px] w-full 2xl:px-16">
-          <Image
-            src={logoblanc}
-            className={classNames(
-              "w-[80px] md:w-[120px] lg:w-[150px]",
-              hasScrolled ? "hidden" : ""
-            )}
-            alt="white ukiyo logo"
-          />
+          <div className={classNames(hasScrolled ? "hidden" : "")}>
+            <LogoSvg width={70} height={71} fill="#ffff" />
+          </div>
           <Image
             src={logored}
-            className={classNames(
-              "w-[80px] md:w-[120px] lg:w-[150px]",
-              hasScrolled ? "" : "hidden"
-            )}
+            className={classNames("w-[70px] ", hasScrolled ? "" : "hidden")}
             alt="gradient ukiyo logo"
           />
           <MenuButton scroll={hasScrolled} />
