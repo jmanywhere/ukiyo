@@ -57,7 +57,7 @@ export default function Home() {
                   Github
                 </a>
                 <a className="rounded-full bg-light-orange btn text-white normal-case font-medium text-base max-w-[calc(50vw)] md:max-w-[144px] w-full hover:bg-light-orange/50">
-                  Vision
+                  Our Vision
                 </a>
                 <div className="md:self-stretch md:w-full md:flex md:justify-end">
                   <div className="flex justify-evenly items-center bg-white text-grey-blue rounded-full w-screen max-w-[50vw] md:max-w-[144px]  px-4 h-full">
