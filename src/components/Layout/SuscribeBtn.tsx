@@ -5,7 +5,7 @@ const SuscribeBtn = () => {
     <div className="join border-0 py-4 justify-center w-full">
       <input
         type="text"
-        className="input join-item rounded-full transparent bg-transparent border-white/20 placeholder:text-light-gray placeholder:text-xs h-auto font-normal  border-r-0"
+        className="input join-item rounded-full transparent bg-transparent border-white/20 placeholder:text-light-gray placeholder:text-xs h-auto font-normal  border-r-0 max-w-"
         placeholder="Subscribe to our Newsletter"
       />
       <div className="join-item rounded-r-full bg-transparent  border-white/20 p-2 border-l-0 border-[1px]">
