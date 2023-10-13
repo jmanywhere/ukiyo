@@ -215,7 +215,7 @@ export default function Home() {
                     Identity and Reputation
                   </h4>
                   <p className="font-normal text-dark-text">
-                    Verified proof of innocence and unique personhood enabling
+                    Verified proof of identity and unique personhood enabling
                     you to operate freely and privately
                   </p>
                 </div>
