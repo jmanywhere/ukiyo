@@ -19,8 +19,10 @@ const News = async () => {
         <h3 className="pl-4 md:pl-0 text-3xl md:text-[56px] lg:text-8xl text-dark-text z-10 whitespace-pre-wrap md:leading-[4rem] lg:leading-[5.5rem] pb-1 w-full">
           In the news
         </h3>
+      </div>
+      <div className="z-10">
         <div className="flex flex-col md:flex-row gap-4 md:gap-7 justify-between z-10">
-          <div className="px-10 flex flex-col gap-4 pb-0 md:pb-32 pt-5 md:pt-8 lg:pt-12">
+          <div className="px-0 sm:px-2 md:px-10 flex flex-col gap-4 pb-0 md:pb-32 pt-5 md:pt-8 lg:pt-12 items-center">
             {recentNews?.[0] && (
               <NewsCard
                 title={recentNews[0].blogTitle}
@@ -52,8 +54,8 @@ const News = async () => {
               />
             )}
           </div>
-          <div className="flex-grow w-[1px] max-w-[1px] bg-dark-text/20 hidden md:flex" />
-          <div className="px-10 flex flex-col gap-4 pb-12 md:pb-32 pt-0 md:pt-8 lg:pt-12">
+          <div className="flex-grow min-w-[1px] max-w-[1px] bg-dark-text/20 hidden md:flex" />
+          <div className="px-0 sm:px-2 md:px-10 flex flex-col gap-4 pb-12 md:pb-32 pt-0 md:pt-8 lg:pt-12 items-center">
             {recentNews[3] && (
               <NewsCard
                 title={recentNews[3].blogTitle}
@@ -115,7 +117,7 @@ const NewsCard = (props: {
   url?: string;
 }) => {
   return (
-    <div className="border-[1px] border-dark-text/20 bg-almost-white p-2 md:p-8 rounded-2xl min-w-[235px] max-w-[525px]">
+    <div className="border-[1px] border-dark-text/20 bg-almost-white p-2 md:p-8 rounded-2xl min-w-[235px] max-w-[525px] w-full">
       <div className="collapse">
         <input type="radio" name={props.acId} className="peer" />
         <div className="collapse-title pr-0 text-light-orange peer-checked:text-almost-white">
