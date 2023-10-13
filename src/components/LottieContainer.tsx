@@ -14,7 +14,7 @@ export default function LottieContainer(props: {
   const [animationLoaded, setAnimationLoaded] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setAnimationLoaded(true), 1500);
+    setAnimationLoaded(true);
   }, [setAnimationLoaded]);
 
   return (

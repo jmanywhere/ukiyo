@@ -96,7 +96,7 @@ export default function Home() {
         </div>
       </section>
       {/* Secondary Hero */}
-      <section className=" py-16 lg:py-32  relative overflow-hidden flex flex-col items-center px-2 md:px-24 xl:px-28">
+      <section className=" py-16 lg:py-32  relative overflow-hidden flex flex-col items-center px-2 md:px-12 xl:px-28">
         <div className="z-10 max-w-[1440px] w-screen px-2 md:px-5  lg:px-6 xl:px-7">
           <h2 className="text-2xl xs:text-3xl md:text-[56px] lg:text-7xl text-dark-text z-10 whitespace-pre-wrap md:leading-[4rem] lg:leading-[5.5rem] pb-6 md:pb-9 lg:pb-14 px-5">
             A new type of financial technology for capital formation
@@ -107,15 +107,15 @@ export default function Home() {
             lottiePath="HeroImageUkiyo"
             animationData={heroLottie}
             placeholder={hero_placeholder}
-            className="max-w-xs lg:max-w-xl z-10"
+            className="max-w-xs min-w-[70vw] md:min-w-[50vw] lg:min-w-md lg:max-w-xl z-10 w-screen"
             alt="Hero_placeholder"
           />
-          <div className="z-10">
-            <h3 className="text-dark-text italic font-medium text-2xl max-w-sm pb-4">
+          <div className="z-10 md:max-w-md px-2">
+            <h3 className="text-dark-text italic font-medium text-2xl lg:text-[32px] pb-4 lg:leading-10">
               Imagine being able to build or be a part of something you could
               only dream of
             </h3>
-            <p className="text-dark-text font-normal max-w-xs">
+            <p className="text-dark-text font-normal">
               We&apos;re creating the infrastructure to democratize funding,
               making it open and permissionless to Everyone, Everywhere, All at
               Once

@@ -18,7 +18,7 @@ const Footer = () => {
               <LogoSvg width={88} height={90} fill="white" />
               <div className="border-[1px] border-white/20 rounded-full p-2 flex flex-row items-center mt-4">
                 <input
-                  className="h-12 text-sm px-4  bg-transparent rounded-full rounded-r-none text-white max-w-[260px] md:max-w-md min-w-[260px]"
+                  className="h-12 text-sm px-4  bg-transparent rounded-full rounded-r-none text-white max-w-[260px] md:max-w-md xs:min-w-[200px] micro:min-w-[180px]"
                   placeholder="Subscribe to Newsletter"
                 />
                 <a
