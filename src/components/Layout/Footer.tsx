@@ -58,7 +58,7 @@ const Footer = () => {
                 </Link>
                 <a
                   className="text-sm pb-2 text-white/80 hover:text-white"
-                  href="https://docs.ukiyo.network/"
+                  href="https://medium.com/@ukiyo_labs"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -89,7 +89,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Manifesto
+                  Vision
                 </a>
                 <a
                   className="text-sm pb-2 text-white/80 hover:text-white"
@@ -132,7 +132,7 @@ const Footer = () => {
                 </a>
                 <a
                   className="text-sm pb-2 text-white/80 hover:text-white"
-                  href="https://docs.ukiyo.network/ukiyo/literature-and-content/media"
+                  href="https://www.dropbox.com/sh/szzc0crwaulzpxs/AADzdcu7g5Fz-tNBpCFtq4FUa?dl=0"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

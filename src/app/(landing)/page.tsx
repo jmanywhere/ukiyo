@@ -14,8 +14,8 @@ import heroImgMobile from "../../assets/images/HeroImgMobile.svg";
 import heroImgDesktop from "../../assets/images/HeroImgDesktop.svg";
 import ventures from "../../assets/images/venturesImg.svg";
 import studio from "../../assets/images/studiosImg.svg";
-import walletIcon from "../../assets/images/walletIcon.svg";
-import computerIcon from "../../assets/images/computerIcon.svg";
+import walletIcon from "../../../public/icons/Wallet.svg";
+import computerIcon from "../../../public/icons/Computer.svg";
 
 //components
 import EcoCard from "@/components/EcoCard";
@@ -251,7 +251,7 @@ export default function Home() {
           <h2 className="text-2xl xs:text-3xl md:text-[56px] lg:text-7xl text-white  max-w-[600px] z-10 whitespace-pre-wrap md:leading-[4rem] lg:leading-[5.5rem] pb-6 md:pb-9 lg:pb-14">
             Fortune favors the bold
           </h2>
-          <div className="flex flex-col items-center  gap-6 md:flex-row md:justify-center relative z-10">
+          <div className="flex flex-col items-center  gap-6 lg:flex-row lg:justify-center relative z-10">
             <FortuneCard
               title="Are you an investor?"
               text="We're seeking the brightest and boldest investors to join us"
